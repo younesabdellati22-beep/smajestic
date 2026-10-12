@@ -1347,9 +1347,44 @@ const SVC_CARDS=[...SVCS,"materiel"];
 function svcGrid(){
   const g=$("#svc-grid"); if(!g) return;
   const l=L();
-  g.innerHTML=SVC_CARDS.map(x=>`<a class="svc-card" href="${SVC_URL[x]}">
-    <span class="ph">${PHOTOS[x]?`<img src="img-svc-${x}.jpg" alt="" loading="lazy">`:""}</span>
-    <span class="tx"><h3>${l.sv[x][0]}</h3><p>${l.sv[x][1]}</p><span class="go">${l.sv[x][2]} &rarr;</span></span></a>`).join("");
+  g.innerHTML=SVC_CARDS.map((x,i)=>`<a class="svc-card${i===SVC_CARDS.length-1?" wide":""}" href="${SVC_URL[x]}">
+    <span class="ph">${PHOTOS[x]===2?`<span class="tag">${l.illus3d}</span>`:""}${PHOTOS[x]?`<img src="img-svc-${x}.jpg" alt="" loading="lazy">`:""}</span>
+    <span class="tx"><h3>${l.sv[x][0]}</h3><p>${l.sv[x][1]}</p><span class="go">${l.sv[x][2]} <i>&rarr;</i></span></span></a>`).join("");
+  svcGlow(g);
+}
+/* la lueur dorée : suit la souris sur ordi, suit le scroll sur téléphone */
+let svcScrollOn=false;
+function svcGlow(g){
+  g.querySelectorAll(".svc-card").forEach(k=>{
+    k.addEventListener("pointermove",e=>{
+      if(e.pointerType!=="mouse") return;
+      const r=k.getBoundingClientRect();
+      k.style.setProperty("--mx",(e.clientX-r.left)+"px");
+      k.style.setProperty("--my",(e.clientY-r.top)+"px");
+    });
+  });
+  if(svcScrollOn) return;
+  svcScrollOn=true;
+  const noHover=window.matchMedia("(hover:none)");
+  let tick=false;
+  const lit=()=>{
+    tick=false;
+    const cards=[...document.querySelectorAll("#svc-grid .svc-card")];
+    if(!cards.length) return;
+    if(!noHover.matches){cards.forEach(k=>k.classList.remove("lit")); return;}
+    const mid=innerHeight/2; let best=null,bd=1e9;
+    cards.forEach(k=>{
+      const r=k.getBoundingClientRect();
+      if(r.bottom<60||r.top>innerHeight-40) return;
+      const d=Math.abs(r.top+r.height/2-mid);
+      if(d<bd){bd=d;best=k;}
+    });
+    cards.forEach(k=>k.classList.toggle("lit",k===best));
+  };
+  addEventListener("scroll",()=>{if(!tick){tick=true;requestAnimationFrame(lit);}},{passive:true});
+  addEventListener("resize",lit);
+  if(noHover.addEventListener) noHover.addEventListener("change",lit);
+  lit();
 }
 function applyLang(){
   const l=L(); document.documentElement.lang=lang;
