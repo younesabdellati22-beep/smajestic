@@ -213,7 +213,7 @@ u_hours:"Lun–ven 8h–18h · sam 9h–13h",u_zone:"Flandre-Orientale & Hainaut
      reno:["Rénovation","Salle de bain, cuisine, toiture, façade ou la maison entière.","Demander un prix"]},
  ba_h2:"Le même châssis, <span class='ac'>avant et après.</span>",
  ba_p:"Maison de rangée à Ronse : porte d’entrée et châssis remplacés, double vitrage. Glissez le curseur.",
- ba_avant:"Avant",ba_apres:"Après",
+ ba_avant:"Avant",ba_apres:"Après",illus3d:"Vue 3D",
  ba_note:"Chantier réalisé par S.Majestic. Glissez le curseur pour comparer.",
  gal_open:"Agrandir la photo",gal_prev:"Photo précédente",gal_next:"Photo suivante",gal_close:"Fermer",
  photo:"Photo à venir",pg_faq_h:"Questions fréquentes",
@@ -397,7 +397,7 @@ u_hours:"Ma–vr 8u–18u · za 9u–13u",u_zone:"Oost-Vlaanderen & Henegouwen",
      reno:["Renovatie","Badkamer, keuken, dak, gevel of de hele woning.","Prijs aanvragen"]},
  ba_h2:"Hetzelfde raam, <span class='ac'>voor en na.</span>",
  ba_p:"Rijwoning in Ronse: voordeur en ramen vervangen, dubbele beglazing. Sleep de schuifregelaar.",
- ba_avant:"Voor",ba_apres:"Na",
+ ba_avant:"Voor",ba_apres:"Na",illus3d:"3D-zicht",
  ba_note:"Werf uitgevoerd door S.Majestic. Sleep de schuifregelaar om te vergelijken.",
  gal_open:"Foto vergroten",gal_prev:"Vorige foto",gal_next:"Volgende foto",gal_close:"Sluiten",
  photo:"Foto volgt",pg_faq_h:"Veelgestelde vragen",
@@ -1303,7 +1303,7 @@ function svcPanel(){
   if(!$("#svc-panel")) return;
   const l=L(), x=svcShow;
   $("#svc-panel").innerHTML=`<div class="svc-panel">
-    ${PHOTOS[x]?`<div class="photo has"><img src="img-svc-${x}.jpg" alt="" loading="lazy"><span class="tagchip">${l.sv[x][2]}</span></div>`
+    ${PHOTOS[x]?`<div class="photo has"><img src="img-svc-${x}.jpg" alt="" loading="lazy">${PHOTOS[x]===2?`<span class="illus">${l.illus3d}</span>`:""}<span class="tagchip">${l.sv[x][2]}</span></div>`
                :`<div class="photo"><span>${l.photo}</span><span class="tagchip">${l.sv[x][2]}</span></div>`}
     <div class="txt">
       <h3>${l.sv[x][0]}</h3>
@@ -1313,7 +1313,7 @@ function svcPanel(){
     </div></div>`;
 }
 /* ---------- photos de chantier ---------- */
-const PHOTOS={chassis:1,iso:1,clim:1,finit:1,reno:1,materiel:1};   // solar : pas encore de photo
+const PHOTOS={chassis:1,iso:1,solar:2,clim:2,finit:1,reno:1,materiel:1};  // 2 = rendu 3D, pas une photo de chantier
 const GAL=Array.from({length:12},(_,i)=>`img-real${String(i+1).padStart(2,"0")}.jpg`);
 let lbI=0;
 function galerie(){
