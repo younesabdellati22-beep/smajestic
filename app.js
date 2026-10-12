@@ -135,7 +135,7 @@ u_hours:"Lun–ven 8h–18h · sam 9h–13h",u_zone:"Flandre-Orientale & Hainaut
  cd_clim:{mono:"Première pièce (unité extérieure comprise)",extra:"Pièce supplémentaire",pac:"Pompe à chaleur air-eau"},
  cd_src2:"Prix moyens du marché belge 2026. Surfaces estimées d’après la maison que vous avez réglée : elles seront mesurées lors de la visite.",
  p_offer2:"Recevoir mon offre détaillée",
- p_fine2:"Estimation d’après la maison que vous avez réglée. Le prix exact est confirmé après la visite gratuite chez vous.",
+ p_fine2:"Calculé sur la maison que vous avez réglée à l’écran. L’état du support, l’accès au chantier et les finitions choisies se chiffrent lors de la visite.",
  p_empty_iso:"Choisissez ce que vous voulez isoler",p_empty_sol:"Ajoutez des panneaux",p_empty_clim:"Choisissez des pièces",
  sol_noprime:"Plus aucune prime régionale pour le photovoltaïque en Flandre ni en Wallonie depuis 2024. Il reste la TVA à 6 % et les prêts à 0 %.",w2:"2 fenêtres",w3:"3 fenêtres",t_mit:"Mitoyenne",t_f3:"3 façades",t_f4:"4 façades",
  v_front:"Vue 3D",v_drag:"glissez pour tourner",v_cut:"Vue : intérieur",
@@ -181,15 +181,17 @@ u_hours:"Lun–ven 8h–18h · sam 9h–13h",u_zone:"Flandre-Orientale & Hainaut
  cd_min:"minimum par ouverture",cd_triple:"triple vitrage +15 %",cd_color:"couleur +10 %",
  cd_ht:"Sous-total hors TVA",cd_vat:v=>`TVA ${v} %`,cd_tot:"Total",
  cd_src:"Prix moyens du marché belge 2026 (fenêtres au m², portes et baies au forfait, minimum 400 € par ouverture). Vos tarifs réels remplaceront ces valeurs.",
- p_lbl:"Votre prix estimé",p_about:"environ",p_empty:"Cliquez sur une fenêtre",
- p_meta:(v,a,b)=>`Pose et TVA ${v} % comprises<br>entre ${a} et ${b}`,
- p_meta2:(a,b)=>`Pose et TVA comprises<br>entre ${a} et ${b}`,
+ p_lbl:"Votre estimation",p_about:"environ",p_from:"à partir de",p_empty:"Cliquez sur une fenêtre",
+ p_meta:(v,a,b)=>`Pose et TVA ${v} % comprises<br>jusqu’à ${b} selon l’état et les finitions`,
+ p_meta2:(a,b)=>`Pose et TVA comprises<br>jusqu’à ${b} selon l’état et les finitions`,
+ p_notoff:"Estimation indicative — ce n’est pas un devis. Le prix définitif est fixé après la visite, gratuite et sans engagement.",
  p_offer:"Recevoir mon offre avec remise",wa_btn:"Photos par WhatsApp",
- p_fine:"Estimation pour des tailles standard. Le prix exact est confirmé après la prise de mesures, gratuite.",
+ p_fine:"Tailles standard et conditions de pose normales. Dépose de l’ancien, évacuation, échafaudage, étage ou accès difficile se chiffrent lors de la visite.",
  of_name:"Prénom",of_name2:"Nom",of_tel:"Téléphone",of_cp:"Code postal",of_send:"Rappelez-moi",of_back:"Annuler",
  of_err:"Indiquez votre numéro de téléphone pour qu’on puisse vous rappeler.",
  of_ok_h:"Merci, c’est noté.",of_ok_p:"On vous rappelle rapidement.",of_demo:"Maquette : rien n’a été envoyé.",
  of_intro:"On vous rappelle pour affiner le prix et vous proposer nos remises du moment.",
+ of_confirm:"Vous demandez un rappel, pas un devis. Le montant affiché est une estimation : le prix définitif est fixé après la visite, gratuite et sans engagement.",
  lead_lbl:"Votre prix",lead_v:"Sur rappel",lead_meta:"Gratuit et sans engagement",lead_btn:"Recevoir mon prix",
  partner:"Installé par nos partenaires certifiés. Vous n’avez qu’un seul contact : S.Majestic.",
  zones_t:"Quoi isoler ?",zones:{toit:"Toit",murs:"Murs",sol:"Sol"},zl:{toit:"TOIT",murs:"MURS",sol:"SOL"},
@@ -238,7 +240,7 @@ u_hours:"Lun–ven 8h–18h · sam 9h–13h",u_zone:"Flandre-Orientale & Hainaut
  pr3_k:"Primes en Wallonie",pr3_p:"Nouveau système à partir du 1er octobre 2026. On vous dit ce qui s’applique à vous.",
  pr4_k:"Le dossier",pr4_p:"On regarde avec vous les aides possibles et on prépare les papiers.",
  faq_h:"Questions fréquentes",
- q0:"Le prix du simulateur est-il fiable ?",a0:"Oui, comme estimation. Les fenêtres sont calculées au m² selon des tailles standard, les portes et les baies au forfait, sur base des prix moyens du marché belge. Le prix exact est confirmé après la prise de mesures chez vous, et peut inclure nos remises du moment.",
+ q0:"Le prix du simulateur est-il fiable ?",a0:"Oui, comme estimation de départ. Le montant affiché est un « à partir de » : il correspond à des tailles standard, dans des conditions de pose normales. Selon l’état du support, l’accès au chantier, l’étage ou les finitions que vous choisissez, le prix final peut monter — la fourchette haute est indiquée juste à côté. Le prix définitif n’est fixé qu’après la visite, gratuite et sans engagement.",
  q1:"Je ne connais rien aux travaux, c’est un problème ?",a1:"Non. Cliquez sur « Je ne sais pas » si vous hésitez : on calcule avec le choix le plus courant et on vous conseille ensuite.",
  q2:"Vous posez vous-mêmes les panneaux solaires et les clims ?",a2:"Non, ce sont nos partenaires certifiés qui les installent. Vous gardez un seul contact : S.Majestic.",
  q3:"La visite est-elle payante ?",a3:"Non. La visite, les mesures et le devis sont gratuits et sans engagement.",
@@ -253,7 +255,7 @@ u_hours:"Lun–ven 8h–18h · sam 9h–13h",u_zone:"Flandre-Orientale & Hainaut
  lg_h1:"Mentions légales et <span class='ac'>vie privée</span>",lg_lead:"Les informations que la loi belge impose à tout site commercial, et ce qu’on fait de vos données.",
  ft_about:"Construction et rénovation à Ronse et dans la région. Châssis, isolation, solaire, clim.",ft_svc:"Services",ft_zone:"Zone",ft_contact:"Contact",ft_h1:"Lun–ven 8h–18h",ft_h2:"Sam 9h–13h",
  ft_demo:"Maquette : téléphone, e-mail et horaires à confirmer",
- mb_l:"Votre prix",mb_cta:"Mon offre"
+ mb_l:"Votre prix",mb_from:"dès",mb_cta:"Mon offre"
 },
 nl:{
  u_tel:"Tel. +32 4xx xx xx xx",
@@ -329,7 +331,7 @@ u_hours:"Ma–vr 8u–18u · za 9u–13u",u_zone:"Oost-Vlaanderen & Henegouwen",
  cd_clim:{mono:"Eerste kamer (buitenunit inbegrepen)",extra:"Extra kamer",pac:"Lucht-waterwarmtepomp"},
  cd_src2:"Gemiddelde Belgische marktprijzen 2026. Oppervlakten geschat op basis van de woning die u instelde: ze worden bij het bezoek opgemeten.",
  p_offer2:"Mijn gedetailleerde offerte ontvangen",
- p_fine2:"Schatting op basis van de woning die u instelde. De exacte prijs wordt bevestigd na het gratis bezoek bij u thuis.",
+ p_fine2:"Berekend op de woning die u op het scherm instelde. De staat van de ondergrond, de toegang tot de werf en de gekozen afwerking worden bij het bezoek begroot.",
  p_empty_iso:"Kies wat u wilt isoleren",p_empty_sol:"Voeg panelen toe",p_empty_clim:"Kies kamers",
  sol_noprime:"Sinds 2024 is er geen gewestelijke premie meer voor zonnepanelen in Vlaanderen of Wallonië. Er blijven 6 % btw en renteloze leningen.",w2:"2 ramen",w3:"3 ramen",t_mit:"Rijwoning",t_f3:"Halfopen",t_f4:"Open",
  v_front:"3D-zicht",v_drag:"sleep om te draaien",v_cut:"Zicht: binnenkant",
@@ -375,15 +377,17 @@ u_hours:"Ma–vr 8u–18u · za 9u–13u",u_zone:"Oost-Vlaanderen & Henegouwen",
  cd_min:"minimum per opening",cd_triple:"driedubbele beglazing +15 %",cd_color:"kleur +10 %",
  cd_ht:"Subtotaal excl. btw",cd_vat:v=>`${v} % btw`,cd_tot:"Totaal",
  cd_src:"Gemiddelde Belgische marktprijzen 2026 (ramen per m², deuren en schuiframen per stuk, minimum 400 € per opening). Uw echte tarieven vervangen deze waarden.",
- p_lbl:"Uw geschatte prijs",p_about:"ongeveer",p_empty:"Klik op een raam",
- p_meta:(v,a,b)=>`Plaatsing en ${v} % btw inbegrepen<br>tussen ${a} en ${b}`,
- p_meta2:(a,b)=>`Plaatsing en btw inbegrepen<br>tussen ${a} en ${b}`,
+ p_lbl:"Uw raming",p_about:"ongeveer",p_from:"vanaf",p_empty:"Klik op een raam",
+ p_meta:(v,a,b)=>`Plaatsing en ${v} % btw inbegrepen<br>tot ${b} naargelang staat en afwerking`,
+ p_meta2:(a,b)=>`Plaatsing en btw inbegrepen<br>tot ${b} naargelang staat en afwerking`,
+ p_notoff:"Indicatieve raming — geen offerte. De definitieve prijs wordt bepaald na het gratis en vrijblijvende bezoek.",
  p_offer:"Mijn offerte met korting ontvangen",wa_btn:"Foto’s via WhatsApp",
- p_fine:"Schatting voor standaardmaten. De exacte prijs wordt bevestigd na gratis opmeting.",
+ p_fine:"Standaardmaten en normale plaatsingsomstandigheden. Uitbreken, afvoer, stelling, verdieping of moeilijke toegang worden bij het bezoek begroot.",
  of_name:"Voornaam",of_name2:"Naam",of_tel:"Telefoon",of_cp:"Postcode",of_send:"Bel mij terug",of_back:"Annuleren",
  of_err:"Vul uw telefoonnummer in zodat we u kunnen terugbellen.",
  of_ok_h:"Bedankt, genoteerd.",of_ok_p:"We bellen u snel terug.",of_demo:"Mock-up: er werd niets verstuurd.",
  of_intro:"We bellen u terug om de prijs te verfijnen en u onze huidige kortingen voor te stellen.",
+ of_confirm:"U vraagt een telefoontje aan, geen offerte. Het getoonde bedrag is een raming: de definitieve prijs wordt bepaald na het gratis en vrijblijvende bezoek.",
  lead_lbl:"Uw prijs",lead_v:"Na terugbellen",lead_meta:"Gratis en vrijblijvend",lead_btn:"Mijn prijs ontvangen",
  partner:"Geplaatst door onze gecertificeerde partners. U hebt maar één contact: S.Majestic.",
  zones_t:"Wat isoleren?",zones:{toit:"Dak",murs:"Muren",sol:"Vloer"},zl:{toit:"DAK",murs:"MUREN",sol:"VLOER"},
@@ -432,7 +436,7 @@ u_hours:"Ma–vr 8u–18u · za 9u–13u",u_zone:"Oost-Vlaanderen & Henegouwen",
  pr3_k:"Premies in Wallonië",pr3_p:"Nieuw systeem vanaf 1 oktober 2026. Wij zeggen u wat voor u geldt.",
  pr4_k:"Het dossier",pr4_p:"We bekijken samen de mogelijke steun en bereiden de papieren voor.",
  faq_h:"Veelgestelde vragen",
- q0:"Is de prijs van de simulator betrouwbaar?",a0:"Ja, als schatting. Ramen worden per m² berekend volgens standaardmaten, deuren en schuiframen per stuk, op basis van gemiddelde Belgische marktprijzen. De exacte prijs wordt bevestigd na opmeting bij u thuis en kan onze huidige kortingen bevatten.",
+ q0:"Is de prijs van de simulator betrouwbaar?",a0:"Ja, als startraming. Het getoonde bedrag is een « vanaf »-prijs: het geldt voor standaardmaten in normale plaatsingsomstandigheden. Naargelang de staat van de ondergrond, de toegang tot de werf, de verdieping of de afwerking die u kiest, kan de prijs oplopen — de bovengrens staat ernaast vermeld. De definitieve prijs wordt pas bepaald na het gratis en vrijblijvende bezoek.",
  q1:"Ik ken niets van werken, is dat een probleem?",a1:"Nee. Klik op ‘Ik weet het niet’ als u twijfelt: we rekenen met de meest gekozen optie en adviseren u daarna.",
  q2:"Plaatsen jullie zelf zonnepanelen en airco’s?",a2:"Nee, onze gecertificeerde partners plaatsen ze. U houdt één contact: S.Majestic.",
  q3:"Is het bezoek betalend?",a3:"Nee. Bezoek, opmeting en offerte zijn gratis en vrijblijvend.",
@@ -446,7 +450,7 @@ u_hours:"Ma–vr 8u–18u · za 9u–13u",u_zone:"Oost-Vlaanderen & Henegouwen",
  lg_h1:"Juridische informatie en <span class='ac'>privacy</span>",lg_lead:"De gegevens die de Belgische wet van elke commerciële website eist, en wat we met uw gegevens doen.",
  ft_about:"Bouw en renovatie in Ronse en omgeving. Ramen, isolatie, zonnepanelen, airco.",ft_svc:"Diensten",ft_zone:"Regio",ft_contact:"Contact",ft_h1:"Ma–vr 8u–18u",ft_h2:"Za 9u–13u",
  ft_demo:"Mock-up: telefoon, e-mail en openingsuren te bevestigen",
- mb_l:"Uw prijs",mb_cta:"Mijn offerte"
+ mb_l:"Uw prijs",mb_from:"vanaf",mb_cta:"Mijn offerte"
 }};
 
 let lang="fr"; try{const s=localStorage.getItem("smj-lang"); if(s==="fr"||s==="nl") lang=s;}catch(e){}
@@ -1200,6 +1204,7 @@ function leadForm(){
     <div class="field"><label for="of-tel">${l.of_tel}</label><input type="tel" id="of-tel" autocomplete="tel" value="${esc(S.tel)}"></div>
     <div class="field"><label for="of-cp">${l.of_cp}</label><input type="text" id="of-cp" inputmode="numeric" maxlength="4" value="${esc(S.cp)}"></div></div>
     <span class="err" id="of-err" hidden>${l.of_err}</span>
+    <p class="notoff soft">${l.of_confirm}</p>
     <div style="display:flex;gap:12px;align-items:center"><button type="button" class="btn btn-ink" id="of-send" style="flex:1">${l.of_send}</button><button type="button" class="link" id="of-back">${l.of_back}</button></div></div>`;
 }
 /* liste des services déjà chiffrés, au-dessus du prix */
@@ -1207,7 +1212,7 @@ function cartHtml(){
   const l=L(), t=cartTotal();
   if(t.n<2) return "";
   return `<div class="cart">${t.items.map(({svc,c})=>
-    `<div class="ci"><span class="nm2" data-goto="${svc}">${l["s_"+svc]}</span><span class="am">${eur(r50(c.sum))}</span>
+    `<div class="ci"><span class="nm2" data-goto="${svc}">${l["s_"+svc]}</span><span class="am">${l.mb_from} ${eur(r50(r50(c.sum)*(1-(c.margin||MARGIN))))}</span>
      <button type="button" class="rm" data-rm="${svc}" aria-label="${l.cart_rm} ${l["s_"+svc]}" title="${l.cart_rm}">×</button></div>`).join("")}</div>`;
 }
 function price(){
@@ -1219,7 +1224,8 @@ function price(){
     const lbl=multi?`${l.cart_t} <span style="font-weight:500;color:var(--ink-2)">· ${t.n} ${t.n>1?l.cart_many:l.cart_one}</span>`:l.p_lbl;
     const vat=multi?null:Math.round(c.vat*100);
     const meta=multi?l.p_meta2(eur(r50(t.lo)),eur(r50(t.hi))):l.p_meta(vat,eur(r50(t.lo)),eur(r50(t.hi)));
-    head=cartHtml()+`<div class="row1"><div><div class="lbl2">${lbl}</div><div class="pv" id="pv"></div></div><p class="pmeta">${meta}</p></div>`;
+    head=cartHtml()+`<div class="row1"><div><div class="lbl2">${lbl}</div><div class="pv" id="pv"></div></div><p class="pmeta">${meta}</p></div>
+      <p class="notoff">${l.p_notoff}</p>`;
     acts=`<div class="acts"><button type="button" class="btn btn-ink" id="open-form">${S.svc==="chassis"&&!multi?l.p_offer:l.p_offer2}</button><a class="btn btn-wa wa-link" href="#" target="_blank" rel="noopener">${l.wa_btn}</a></div><p class="fine">${S.svc==="chassis"&&!multi?l.p_fine:l.p_fine2}</p>`;
   } else {
     const empty = S.svc==="chassis"?l.p_empty:S.svc==="iso"?l.p_empty_iso:S.svc==="solar"?l.p_empty_sol:S.svc==="clim"?l.p_empty_clim:S.svc==="finit"?l.p_empty_finit:null;
@@ -1234,18 +1240,18 @@ function tick(){
   const el=$("#pv"); if(!el) return;
   const t=cartTotal(), l=L();
   if(!t.n) return;
-  const target=r50(t.sum);
+  const target=r50(t.lo);   // on affiche le bas de fourchette : « à partir de »
   cancelAnimationFrame(anim);
   const from=shown, t0=performance.now(), dur=420, reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
   if(from!==target) el.classList.add("pulse");
   const step=now=>{ const p=reduce?1:Math.min(1,(now-t0)/dur), v=from+(target-from)*(1-Math.pow(1-p,3));
-    el.innerHTML=`<small>${l.p_about}</small>${eur(r50(v))}`; if(p<1) anim=requestAnimationFrame(step); else {shown=target; el.classList.remove("pulse");} };
+    el.innerHTML=`<small>${l.p_from}</small>${eur(r50(v))}`; if(p<1) anim=requestAnimationFrame(step); else {shown=target; el.classList.remove("pulse");} };
   anim=requestAnimationFrame(step);
 }
 function mbar(){ if(!$("#mb-v")) return;
   const l=L(), t=cartTotal();
   $("#mb-l").textContent = t.n ? (t.n>1?l.cart_t:l.mb_l) : l["s_"+S.svc];
-  $("#mb-v").textContent = t.n ? "≈ "+eur(r50(t.sum)) : (S.svc==="reno"?l.lead_v:"—");
+  $("#mb-v").textContent = t.n ? l.mb_from+" "+eur(r50(t.lo)) : (S.svc==="reno"?l.lead_v:"—");
   $("#mb-cta").textContent = l.mb_cta; }
 function setWa(){
   let txt=L().wa; const t=cartTotal();

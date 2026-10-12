@@ -237,8 +237,9 @@ nav.links a:hover{color:var(--gold-2)}
 .price{border-top:1px solid var(--line);padding:18px 24px 20px;display:grid;gap:12px;background:var(--surface)}
 .price .row1{display:flex;justify-content:space-between;align-items:flex-end;gap:12px}
 .price .lbl2{font-size:.82rem;color:var(--ink-2);font-weight:600}
-.pv{font-weight:800;font-size:2.25rem;letter-spacing:-.035em;line-height:1.05;font-variant-numeric:tabular-nums;transition:color .3s}
-.pv small{font-size:.88rem;font-weight:600;color:var(--ink-2);margin-right:.35em;letter-spacing:0}
+.pv{font-weight:800;font-size:2.25rem;letter-spacing:-.035em;line-height:1.05;font-variant-numeric:tabular-nums;transition:color .3s;white-space:nowrap}
+@media (max-width:560px){.price .row1{flex-direction:column;align-items:flex-start;gap:4px}.price .row1 .pmeta{text-align:left}.pv{font-size:2rem}}
+.pv small{display:block;font-size:.8rem;font-weight:700;color:var(--ink-2);letter-spacing:.04em;text-transform:uppercase;margin-bottom:2px}
 .pv.pulse{color:var(--gold)}
 .pmeta{font-size:.78rem;color:var(--ink-2);text-align:right;line-height:1.45;min-width:0}
 .price .acts{display:flex;gap:9px}
@@ -255,6 +256,8 @@ input:focus,textarea:focus{outline:none;border-color:var(--gold)}
 .success{border-radius:14px;background:color-mix(in srgb,var(--ok) 12%,transparent);padding:13px 15px;display:grid;gap:2px;font-size:.92rem}
 .success strong{color:var(--ok)}
 .fine{font-size:.76rem;color:var(--ink-2)}
+.notoff{font-size:.78rem;line-height:1.45;color:var(--ink-2);background:var(--gold-soft);border-left:3px solid var(--gold);border-radius:0 8px 8px 0;padding:9px 12px;margin:12px 0 2px}
+.notoff.soft{background:none;border-left-color:var(--line-2);padding:4px 0 4px 12px;font-size:.76rem}
 
 /* reviews */
 .rev{background:var(--tint);padding-block:30px}
