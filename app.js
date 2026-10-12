@@ -211,6 +211,11 @@ u_hours:"Lun–ven 8h–18h · sam 9h–13h",u_zone:"Flandre-Orientale & Hainaut
      clim:["Clim et pompe à chaleur","Chaud l’hiver, frais l’été. Installés par nos partenaires certifiés.","Demander un prix"],
      finit:["Finitions et aménagement","Plafonnage, cloisons, sols, peinture et enduit de façade.","Calculer mon prix"],
      reno:["Rénovation","Salle de bain, cuisine, toiture, façade ou la maison entière.","Demander un prix"]},
+ ba_h2:"Le même châssis, <span class='ac'>avant et après.</span>",
+ ba_p:"Maison de rangée à Ronse : porte d’entrée et châssis remplacés, double vitrage. Glissez le curseur.",
+ ba_avant:"Avant",ba_apres:"Après",
+ ba_note:"Chantier réalisé par S.Majestic. Glissez le curseur pour comparer.",
+ gal_open:"Agrandir la photo",gal_prev:"Photo précédente",gal_next:"Photo suivante",gal_close:"Fermer",
  photo:"Photo à venir",pg_faq_h:"Questions fréquentes",
  h3d_load:"Chargement de la maison en 3D…",h3d_err:"La vue 3D n’a pas pu se charger. Le calculateur fonctionne quand même : utilisez les boutons + et − à droite.",h3d_retry:"Réessayer",
  ab_ph:"Photo du patron sur chantier",ab_h:"Qui est derrière S.Majestic ?",
@@ -390,6 +395,11 @@ u_hours:"Ma–vr 8u–18u · za 9u–13u",u_zone:"Oost-Vlaanderen & Henegouwen",
      clim:["Airco en warmtepomp","Warm in de winter, koel in de zomer. Geplaatst door onze gecertificeerde partners.","Prijs aanvragen"],
      finit:["Afwerking en inrichting","Pleisterwerk, wanden, vloeren, schilderwerk en gevelbezetting.","Bereken mijn prijs"],
      reno:["Renovatie","Badkamer, keuken, dak, gevel of de hele woning.","Prijs aanvragen"]},
+ ba_h2:"Hetzelfde raam, <span class='ac'>voor en na.</span>",
+ ba_p:"Rijwoning in Ronse: voordeur en ramen vervangen, dubbele beglazing. Sleep de schuifregelaar.",
+ ba_avant:"Voor",ba_apres:"Na",
+ ba_note:"Werf uitgevoerd door S.Majestic. Sleep de schuifregelaar om te vergelijken.",
+ gal_open:"Foto vergroten",gal_prev:"Vorige foto",gal_next:"Volgende foto",gal_close:"Sluiten",
  photo:"Foto volgt",pg_faq_h:"Veelgestelde vragen",
  h3d_load:"De 3D-woning wordt geladen…",h3d_err:"Het 3D-zicht kon niet laden. De rekenmodule werkt wel: gebruik de knoppen + en − rechts.",h3d_retry:"Opnieuw proberen",
  ab_ph:"Foto van de zaakvoerder op de werf",ab_h:"Wie zit er achter S.Majestic?",
@@ -1240,7 +1250,17 @@ function svcTabs(){
   const l=L();
   $("#svc-tabs").innerHTML=SVCS.map(x=>`<button type="button" role="tab" aria-selected="${svcShow===x}" data-show="${x}">${l.sv[x][0]}</button>`).join("");
 }
+document.addEventListener("keydown",e=>{
+  const b=$("#lb"); if(!b||b.hidden) return;
+  if(e.key==="Escape") lbClose();
+  if(e.key==="ArrowLeft") lbOpen(lbI-1);
+  if(e.key==="ArrowRight") lbOpen(lbI+1);
+});
 document.addEventListener("click",e=>{
+  const th=e.target.closest("[data-lb]"); if(th){ lbOpen(+th.dataset.lb); return; }
+  const ac=e.target.closest("[data-lb-act]");
+  if(ac){ const a=ac.dataset.lbAct; a==="close"?lbClose():lbOpen(a==="prev"?lbI-1:lbI+1); return; }
+  if(e.target.id==="lb"){ lbClose(); return; }
   const nv=e.target.closest("nav.links a"); if(nv) document.querySelector("header.top").classList.remove("open");
   const gt=e.target.closest("[data-goto]");
   if(gt){ S.svc=gt.dataset.goto; S.form=false; S.sent=false; refresh(); return; }
@@ -1283,13 +1303,45 @@ function svcPanel(){
   if(!$("#svc-panel")) return;
   const l=L(), x=svcShow;
   $("#svc-panel").innerHTML=`<div class="svc-panel">
-    <div class="photo"><span>${l.photo}</span><span class="tagchip">${l.sv[x][2]}</span></div>
+    ${PHOTOS[x]?`<div class="photo has"><img src="img-svc-${x}.jpg" alt="" loading="lazy"><span class="tagchip">${l.sv[x][2]}</span></div>`
+               :`<div class="photo"><span>${l.photo}</span><span class="tagchip">${l.sv[x][2]}</span></div>`}
     <div class="txt">
       <h3>${l.sv[x][0]}</h3>
       <p class="muted">${l.sv[x][1]}</p>
       <ul>${l.svb[x].map(b=>`<li><svg class="leaf" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1c3 3 6 5 6 8a6 6 0 0 1-12 0c0-3 3-5 6-8Z"/></svg><span>${b}</span></li>`).join("")}</ul>
       <p><button type="button" class="btn btn-gold" data-go="${x}"><span>${x==="chassis"?l.cta:l.lead_btn}</span><span class="arw"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 8h9M9 4l4 4-4 4"/></svg></span></button></p>
     </div></div>`;
+}
+/* ---------- photos de chantier ---------- */
+const PHOTOS={chassis:1,iso:1,clim:1,finit:1,reno:1,materiel:1};   // solar : pas encore de photo
+const GAL=Array.from({length:12},(_,i)=>`img-real${String(i+1).padStart(2,"0")}.jpg`);
+let lbI=0;
+function galerie(){
+  const g=$("#gal"); if(!g) return;
+  g.innerHTML=GAL.map((src,i)=>`<button type="button" data-lb="${i}" aria-label="${L().gal_open}"><img src="${src}" alt="" loading="lazy" decoding="async"></button>`).join("");
+}
+function lbOpen(i){
+  lbI=(i+GAL.length)%GAL.length;
+  let b=$("#lb");
+  if(!b){
+    b=document.createElement("div"); b.className="lb"; b.id="lb";
+    b.innerHTML=`<img alt=""><button type="button" class="x" data-lb-act="close">✕</button>
+      <button type="button" class="pv" data-lb-act="prev">‹</button>
+      <button type="button" class="nx" data-lb-act="next">›</button><span class="cnt"></span>`;
+    document.body.appendChild(b);
+  }
+  b.querySelector("img").src=GAL[lbI];
+  b.querySelector(".cnt").textContent=`${lbI+1} / ${GAL.length}`;
+  b.querySelector(".x").setAttribute("aria-label",L().gal_close);
+  b.querySelector(".pv").setAttribute("aria-label",L().gal_prev);
+  b.querySelector(".nx").setAttribute("aria-label",L().gal_next);
+  b.hidden=false; document.body.style.overflow="hidden"; b.querySelector(".x").focus();
+}
+function lbClose(){ const b=$("#lb"); if(b){ b.hidden=true; document.body.style.overflow=""; } }
+function avantApres(){
+  const r=$("#ba-r"), ba=$("#ba"); if(!r||!ba) return;
+  const set=()=>ba.style.setProperty("--p",r.value+"%");
+  r.addEventListener("input",set); set();
 }
 function applyLang(){
   const l=L(); document.documentElement.lang=lang;
@@ -1298,7 +1350,7 @@ function applyLang(){
   const lf=$("#lang-fr"); if(lf){ lf.setAttribute("aria-pressed",lang==="fr"); $("#lang-nl").setAttribute("aria-pressed",lang==="nl"); }
   document.querySelectorAll("[data-nav]").forEach(a=>a.classList.toggle("on",a.dataset.nav===document.body.dataset.page));
   pageContent();
-  matList(); svcTabs(); svcPanel(); shown=0; all();
+  matList(); galerie(); avantApres(); svcTabs(); svcPanel(); shown=0; all();
 }
 /* tarifs matériel & chantier (B2B) */
 function matList(){
