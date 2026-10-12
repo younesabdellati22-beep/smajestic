@@ -141,7 +141,6 @@ nav.links a:hover{color:var(--gold-2)}
 .rot{position:absolute;right:18px;bottom:16px;display:flex;gap:6px;z-index:2}
 .rot button{width:38px;height:38px;border-radius:50%;border:1px solid var(--line-2);background:var(--surface);cursor:pointer;font-size:1.05rem;line-height:1;box-shadow:var(--sh-sm)}
 .rot button:hover{border-color:var(--gold)}
-@media (max-width:900px){.canvas{min-height:420px}}
 .hint{position:absolute;left:20px;top:16px;display:inline-flex;align-items:center;gap:9px;font-size:.87rem;font-weight:600;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.42em .95em;box-shadow:var(--sh-sm);z-index:2}
 .hint i{width:7px;height:7px;border-radius:50%;background:var(--gold);animation:pulse 1.6s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
@@ -272,7 +271,7 @@ input:focus,textarea:focus{outline:none;border-color:var(--gold)}
 /* sections */
 section.s{padding-block:92px;scroll-margin-top:100px}
 section.tinted{background:var(--tint)}
-@media (max-width:700px){section.s{padding-block:60px}}
+@media (max-width:700px){section.s{padding-block:44px}.sh2{margin-bottom:20px}}
 .sh2{display:grid;grid-template-columns:1.1fr 1fr;gap:34px;align-items:end;margin-bottom:40px}
 .sh2 p{color:var(--ink-2)}
 @media (max-width:820px){.sh2{grid-template-columns:1fr;gap:14px;margin-bottom:28px}}
@@ -295,12 +294,49 @@ section.tinted{background:var(--tint)}
 .photo .illus{position:absolute;left:14px;top:14px;background:rgba(13,13,12,.74);color:var(--on-dark);font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.4em .75em;border-radius:8px}
 .photo .tagchip{position:absolute;left:14px;bottom:14px;background:var(--dark);color:var(--on-dark);border:0;font-size:.78rem;font-weight:600;padding:7px 11px;border-radius:9px}
 
+/* grille des services */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.svc-card{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;text-decoration:none;color:inherit;transition:transform .2s,border-color .2s}
+.svc-card:hover{transform:translateY(-3px);border-color:var(--gold)}
+.svc-card .ph{position:relative;aspect-ratio:4/3;background:var(--tint);overflow:hidden}
+.svc-card .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.svc-card .tx{padding:16px 18px 18px;display:grid;gap:5px}
+.svc-card h3{font-size:1.02rem}
+.svc-card p{font-size:.86rem;color:var(--ink-2);line-height:1.45}
+.svc-card .go{font-size:.84rem;font-weight:700;color:var(--gold);margin-top:3px}
+@media (max-width:900px){.svc-grid{grid-template-columns:1fr 1fr;gap:12px}.svc-card .ph{aspect-ratio:16/10}.svc-card .tx{padding:11px 12px 13px}.svc-card h3{font-size:.92rem}.svc-card p{display:none}.svc-card .go{font-size:.78rem}}
+/* aperçu matériel sur l'accueil */
+.mt-teaser{display:grid;grid-template-columns:1.1fr 1.2fr auto;gap:30px;align-items:center}
+.mt-teaser p{color:var(--ink-2);font-size:.95rem;margin-top:10px}
+.mt-quick{display:grid;gap:8px}
+.mt-quick div{display:flex;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line);padding-bottom:7px;font-size:.92rem}
+.mt-quick b{white-space:nowrap;font-variant-numeric:tabular-nums}
+@media (max-width:900px){.mt-teaser{grid-template-columns:1fr;gap:18px}}
+/* page mentions légales */
+.legal{max-width:62em}
+.legal h2{font-size:1.25rem;margin-top:40px;margin-bottom:12px}
+.legal h2:first-child{margin-top:0}
+.legal p{color:var(--ink-2);line-height:1.7}
+.legal p b{color:var(--ink)}
+.idcard{display:grid;gap:0;margin:0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.idcard>div{display:grid;grid-template-columns:230px 1fr;gap:18px;padding:13px 20px;border-bottom:1px solid var(--line)}
+.idcard>div:last-child{border-bottom:0}
+.idcard dt{color:var(--ink-2);font-size:.9rem}
+.idcard dd{margin:0;font-weight:600}
+@media (max-width:620px){.idcard>div{grid-template-columns:1fr;gap:2px}}
+ul.lgl{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:11px}
+ul.lgl li{display:flex;gap:11px;color:var(--ink-2)}
+ul.lgl .leaf{margin-top:5px}
 /* galerie réalisations */
 .gal{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .gal button{border:0;padding:0;background:none;cursor:zoom-in;border-radius:16px;overflow:hidden;aspect-ratio:4/3;display:block}
 .gal img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s}
 .gal button:hover img{transform:scale(1.05)}
-@media (max-width:900px){.gal{grid-template-columns:repeat(2,1fr);gap:10px}}
+@media (max-width:900px){.gal{grid-template-columns:repeat(2,1fr);gap:10px}
+  .gal button:nth-child(n+7){display:none}
+  .gal.all button{display:block}}
+.gal-more{text-align:center;margin-top:20px;display:none}
+@media (max-width:900px){.gal-more{display:block}.gal-more.off{display:none}}
 /* visionneuse */
 .lb{position:fixed;inset:0;z-index:100;background:rgba(10,10,9,.94);display:grid;place-items:center;padding:28px}
 .lb[hidden]{display:none!important}
@@ -344,7 +380,8 @@ section.tinted{background:var(--tint)}
 .trust li{display:flex;gap:12px}
 .trust li b{display:block}
 .trust li span{color:var(--ink-2);font-size:.95rem}
-@media (max-width:900px){.trust{grid-template-columns:1fr;gap:26px}}
+@media (max-width:900px){.trust{grid-template-columns:1fr;gap:18px}
+  .trust .photo{aspect-ratio:16/9}.trust ul{gap:12px;margin-top:16px}.trust li span{font-size:.9rem}}
 .zone-line{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;border-top:1px solid var(--line);margin-top:44px;padding-top:22px;font-size:.92rem;color:var(--ink-2)}
 .zone-line b{color:var(--ink)}
 
@@ -361,7 +398,8 @@ section.tinted{background:var(--tint)}
 .quote .sep{height:1px;background:var(--line);margin:14px 0}
 .qcard{background:var(--tint);border-radius:var(--r-lg);padding:34px;display:grid;gap:16px;align-content:start}
 .qcard h3{font-size:1.5rem}
-@media (max-width:900px){.quote{grid-template-columns:1fr;gap:32px}}
+@media (max-width:900px){.quote{grid-template-columns:1fr;gap:22px}
+  .quote .contact-block .sep,.quote .contact-block .mail,.quote .contact-block p.muted{display:none}}
 
 .faqblock{background:var(--dark);color:var(--on-dark);border-radius:var(--r-lg);padding:54px 48px;display:grid;grid-template-columns:.85fr 1.15fr;gap:48px}
 .faqblock h2{color:var(--on-dark)}
@@ -389,7 +427,7 @@ footer .socials a{width:38px;height:38px;border-radius:50%;background:var(--dark
 footer .socials svg{width:17px;height:17px}
 footer .bottom{margin-top:46px;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.84rem}
 @media (max-width:900px){footer .cols{grid-template-columns:1fr 1fr}}
-@media (max-width:480px){footer .cols{grid-template-columns:1fr}}
+@media (max-width:480px){footer .cols{grid-template-columns:1fr 1fr;gap:26px}footer{padding-block:44px 110px}}
 
 .mbar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;align-items:center;gap:10px;padding:11px 16px calc(11px + env(safe-area-inset-bottom,0px));background:color-mix(in srgb,var(--surface) 95%,transparent);backdrop-filter:blur(12px);border-top:1px solid var(--line)}
 .mbar .mp{flex:1;min-width:0}
@@ -397,6 +435,23 @@ footer .bottom{margin-top:46px;padding-top:20px;border-top:1px solid var(--line)
 .mbar .mp span{font-size:.75rem;color:var(--ink-2)}
 .mbar .btn .arw{display:none}
 @media (min-width:901px){.mbar{display:none}}
+
+/* ---------- densité mobile (en fin de feuille pour passer devant les règles de base) ---------- */
+@media (max-width:900px){.canvas{min-height:330px}
+  .pbody{padding:16px 16px;gap:14px}
+  .type{padding:7px 0}
+  .grp{gap:6px}
+  .grp .why{font-size:.78rem;line-height:1.4}
+  .seg button{padding:.42em .8em;font-size:.85rem}
+  .price{padding:14px 16px 16px;gap:10px}
+  .pbody h2{font-size:1.2rem}}
+@media (max-width:900px){
+  .pbody .type .ex{font-size:.74rem}
+  .pbody .types .type{gap:8px}
+  .sh2 p{font-size:.92rem}
+  .hero{padding-block:36px 104px}
+  .trust .zone-line{margin-top:28px;padding-top:16px;font-size:.86rem}
+}
 /* ---------- pages de service ---------- */
 nav.links a.on{color:var(--gold-2)}
 .phero{background:var(--dark);color:var(--on-dark);position:relative;overflow:hidden;padding-block:64px 128px}

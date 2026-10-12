@@ -107,7 +107,7 @@ fr:{
  tm_q:"Votre avis client s’affichera ici, avec la note et le prénom du client.",tm_who:"Prénom · Ronse",
  end_h:"Votre prix en une minute, votre devis en une visite",
  end_p:"Commencez par le configurateur : cliquez sur votre maison, voyez le prix, et demandez votre offre détaillée si ça vous convient.",
-u_hours:"Lun–ven 8h–18h · sam 9h–13h",u_zone:"Flandre-Orientale & Hainaut",u_demo:"Maquette : prix et coordonnées provisoires",
+u_hours:"Lun–ven 8h–18h · sam 9h–13h",u_zone:"Flandre-Orientale & Hainaut",u_demo:"Maquette : téléphone et e-mail à compléter",
  tagline:"Construction & Rénovation",
  n1:"Châssis",n2:"Isolation",n3:"Solaire",n4:"Clim & PAC",n5:"Rénovation",n6:"Réalisations",n7:"Contact",cta:"Calculer mon prix",
  n8:"Matériel",
@@ -121,7 +121,7 @@ u_hours:"Lun–ven 8h–18h · sam 9h–13h",u_zone:"Flandre-Orientale & Hainaut
  mt_g1:"Grue E10z",mt_g2:"Grue E27z",
  mt_c1:"Citerne 5 000 litres",mt_c2:"Citerne 10 000 litres",mt_c3:"Citerne 20 000 litres",
  mt_fine:"Tarifs hors TVA 21 %. La location de matériel n’entre pas dans la TVA à 6 % des travaux de rénovation. Minimum de facturation, assurance et disponibilité à confirmer par téléphone.",
- mt_cta:"Demander une disponibilité",
+ mt_cta:"Demander une disponibilité",mt_more:"Voir tous les tarifs",
  h1:"Calculez le prix de vos travaux",h1_p:"Dessinez votre maison, cliquez sur ce que vous voulez changer. Pour les châssis, le prix s’affiche tout de suite.",
  c1:"Devis gratuit",c2:"Sans inscription",c3:"On parle français et néerlandais",
  hb_lv:"Niveaux",hb_w:"Largeur",hb_t:"Maison",hb_d:"Profondeur",
@@ -210,12 +210,13 @@ u_hours:"Lun–ven 8h–18h · sam 9h–13h",u_zone:"Flandre-Orientale & Hainaut
      solar:["Panneaux solaires","Pour produire votre propre électricité. Installés par nos partenaires certifiés.","Demander un prix"],
      clim:["Clim et pompe à chaleur","Chaud l’hiver, frais l’été. Installés par nos partenaires certifiés.","Demander un prix"],
      finit:["Finitions et aménagement","Plafonnage, cloisons, sols, peinture et enduit de façade.","Calculer mon prix"],
-     reno:["Rénovation","Salle de bain, cuisine, toiture, façade ou la maison entière.","Demander un prix"]},
+     reno:["Rénovation","Salle de bain, cuisine, toiture, façade ou la maison entière.","Demander un prix"],
+     materiel:["Matériel et chantier","Mini-pelle avec chauffeur, grue à la journée, citerne d’eau de pluie.","Voir les tarifs"]},
  ba_h2:"Le même châssis, <span class='ac'>avant et après.</span>",
  ba_p:"Maison de rangée à Ronse : porte d’entrée et châssis remplacés, double vitrage. Glissez le curseur.",
  ba_avant:"Avant",ba_apres:"Après",illus3d:"Vue 3D",
  ba_note:"Chantier réalisé par S.Majestic. Glissez le curseur pour comparer.",
- gal_open:"Agrandir la photo",gal_prev:"Photo précédente",gal_next:"Photo suivante",gal_close:"Fermer",
+ gal_more:"Voir les 12 photos",gal_open:"Agrandir la photo",gal_prev:"Photo précédente",gal_next:"Photo suivante",gal_close:"Fermer",
  photo:"Photo à venir",pg_faq_h:"Questions fréquentes",
  h3d_load:"Chargement de la maison en 3D…",h3d_err:"La vue 3D n’a pas pu se charger. Le calculateur fonctionne quand même : utilisez les boutons + et − à droite.",h3d_retry:"Réessayer",
  ab_ph:"Photo du patron sur chantier",ab_h:"Qui est derrière S.Majestic ?",
@@ -241,8 +242,15 @@ u_hours:"Lun–ven 8h–18h · sam 9h–13h",u_zone:"Flandre-Orientale & Hainaut
  q3:"La visite est-elle payante ?",a3:"Non. La visite, les mesures et le devis sont gratuits et sans engagement.",
  q4:"Vous parlez néerlandais ?",a4:"Oui. Ja, wij spreken Nederlands én Frans.",
  ct_h:"Une question, un projet ?",ct_p:"Écrivez-nous ou appelez-nous. On répond en français ou en néerlandais.",ct_msg:"Votre projet en quelques mots",ct_send:"Envoyer",
+
+ /* ---- coordonnées officielles (BCE : S. MAJESTIC BV, 27/02/2025) ---- */
+ ct_addr:"Sint-Cornelisstraat 59<br>9600 Ronse",
+ ft_coord:"Sint-Cornelisstraat 59, 9600 Ronse<br>BE 1020.521.459",
+ ft_copy:"© 2026 S. Majestic SRL · BE 1020.521.459",
+ ft_legal:"Mentions légales et vie privée",
+ lg_h1:"Mentions légales et <span class='ac'>vie privée</span>",lg_lead:"Les informations que la loi belge impose à tout site commercial, et ce qu’on fait de vos données.",
  ft_about:"Construction et rénovation à Ronse et dans la région. Châssis, isolation, solaire, clim.",ft_svc:"Services",ft_zone:"Zone",ft_contact:"Contact",ft_h1:"Lun–ven 8h–18h",ft_h2:"Sam 9h–13h",
- ft_demo:"Maquette : adresse, numéro d’entreprise et horaires à compléter",
+ ft_demo:"Maquette : téléphone, e-mail et horaires à confirmer",
  mb_l:"Votre prix",mb_cta:"Mon offre"
 },
 nl:{
@@ -291,7 +299,7 @@ nl:{
  tm_q:"Hier komt de review van uw klant, met score en voornaam.",tm_who:"Voornaam · Ronse",
  end_h:"Uw prijs in één minuut, uw offerte in één bezoek",
  end_p:"Begin met de configurator: klik op uw woning, bekijk de prijs en vraag uw gedetailleerde offerte aan als het u bevalt.",
-u_hours:"Ma–vr 8u–18u · za 9u–13u",u_zone:"Oost-Vlaanderen & Henegouwen",u_demo:"Mock-up: prijzen en gegevens voorlopig",
+u_hours:"Ma–vr 8u–18u · za 9u–13u",u_zone:"Oost-Vlaanderen & Henegouwen",u_demo:"Mock-up: telefoon en e-mail aan te vullen",
  tagline:"Bouw & Renovatie",
  n1:"Ramen",n2:"Isolatie",n3:"Zonnepanelen",n4:"Airco & WP",n5:"Renovatie",n6:"Realisaties",n7:"Contact",cta:"Bereken mijn prijs",
  n8:"Materieel",
@@ -305,7 +313,7 @@ u_hours:"Ma–vr 8u–18u · za 9u–13u",u_zone:"Oost-Vlaanderen & Henegouwen",
  mt_g1:"Kraan E10z",mt_g2:"Kraan E27z",
  mt_c1:"Put 5 000 liter",mt_c2:"Put 10 000 liter",mt_c3:"Put 20 000 liter",
  mt_fine:"Tarieven excl. 21 % btw. Materieelverhuur valt niet onder de 6 % btw voor renovatiewerken. Minimumfacturatie, verzekering en beschikbaarheid telefonisch te bevestigen.",
- mt_cta:"Beschikbaarheid vragen",
+ mt_cta:"Beschikbaarheid vragen",mt_more:"Alle tarieven bekijken",
  h1:"Bereken de prijs van uw werken",h1_p:"Teken uw woning, klik op wat u wilt vervangen. Voor ramen ziet u de prijs meteen.",
  c1:"Gratis offerte",c2:"Zonder registratie",c3:"Wij spreken Nederlands en Frans",
  hb_lv:"Bouwlagen",hb_w:"Breedte",hb_t:"Woning",hb_d:"Diepte",
@@ -394,12 +402,13 @@ u_hours:"Ma–vr 8u–18u · za 9u–13u",u_zone:"Oost-Vlaanderen & Henegouwen",
      solar:["Zonnepanelen","Om zelf stroom op te wekken. Geplaatst door onze gecertificeerde partners.","Prijs aanvragen"],
      clim:["Airco en warmtepomp","Warm in de winter, koel in de zomer. Geplaatst door onze gecertificeerde partners.","Prijs aanvragen"],
      finit:["Afwerking en inrichting","Pleisterwerk, wanden, vloeren, schilderwerk en gevelbezetting.","Bereken mijn prijs"],
-     reno:["Renovatie","Badkamer, keuken, dak, gevel of de hele woning.","Prijs aanvragen"]},
+     reno:["Renovatie","Badkamer, keuken, dak, gevel of de hele woning.","Prijs aanvragen"],
+     materiel:["Materieel en werf","Minigraver met chauffeur, kraan per dag, regenwaterput.","Tarieven bekijken"]},
  ba_h2:"Hetzelfde raam, <span class='ac'>voor en na.</span>",
  ba_p:"Rijwoning in Ronse: voordeur en ramen vervangen, dubbele beglazing. Sleep de schuifregelaar.",
  ba_avant:"Voor",ba_apres:"Na",illus3d:"3D-zicht",
  ba_note:"Werf uitgevoerd door S.Majestic. Sleep de schuifregelaar om te vergelijken.",
- gal_open:"Foto vergroten",gal_prev:"Vorige foto",gal_next:"Volgende foto",gal_close:"Sluiten",
+ gal_more:"Bekijk de 12 foto's",gal_open:"Foto vergroten",gal_prev:"Vorige foto",gal_next:"Volgende foto",gal_close:"Sluiten",
  photo:"Foto volgt",pg_faq_h:"Veelgestelde vragen",
  h3d_load:"De 3D-woning wordt geladen…",h3d_err:"Het 3D-zicht kon niet laden. De rekenmodule werkt wel: gebruik de knoppen + en − rechts.",h3d_retry:"Opnieuw proberen",
  ab_ph:"Foto van de zaakvoerder op de werf",ab_h:"Wie zit er achter S.Majestic?",
@@ -425,8 +434,14 @@ u_hours:"Ma–vr 8u–18u · za 9u–13u",u_zone:"Oost-Vlaanderen & Henegouwen",
  q3:"Is het bezoek betalend?",a3:"Nee. Bezoek, opmeting en offerte zijn gratis en vrijblijvend.",
  q4:"Spreken jullie Frans?",a4:"Ja. Oui, nous parlons français et néerlandais.",
  ct_h:"Een vraag, een project?",ct_p:"Schrijf of bel ons. Wij antwoorden in het Nederlands of het Frans.",ct_msg:"Uw project in een paar woorden",ct_send:"Versturen",
+
+ ct_addr:"Sint-Cornelisstraat 59<br>9600 Ronse",
+ ft_coord:"Sint-Cornelisstraat 59, 9600 Ronse<br>BE 1020.521.459",
+ ft_copy:"© 2026 S. Majestic BV · BE 1020.521.459",
+ ft_legal:"Juridische informatie en privacy",
+ lg_h1:"Juridische informatie en <span class='ac'>privacy</span>",lg_lead:"De gegevens die de Belgische wet van elke commerciële website eist, en wat we met uw gegevens doen.",
  ft_about:"Bouw en renovatie in Ronse en omgeving. Ramen, isolatie, zonnepanelen, airco.",ft_svc:"Diensten",ft_zone:"Regio",ft_contact:"Contact",ft_h1:"Ma–vr 8u–18u",ft_h2:"Za 9u–13u",
- ft_demo:"Mock-up: adres, ondernemingsnummer en openingsuren aan te vullen",
+ ft_demo:"Mock-up: telefoon, e-mail en openingsuren te bevestigen",
  mb_l:"Uw prijs",mb_cta:"Mijn offerte"
 }};
 
@@ -1244,12 +1259,6 @@ function all(){ houseBar(); tabs(); refresh(); }
 
 /* ---------- événements ---------- */
 function focusSame(sel){ const n=document.querySelector(sel); n&&n.focus(); }
-let svcShow="chassis";
-function svcTabs(){
-  if(!$("#svc-tabs")) return;
-  const l=L();
-  $("#svc-tabs").innerHTML=SVCS.map(x=>`<button type="button" role="tab" aria-selected="${svcShow===x}" data-show="${x}">${l.sv[x][0]}</button>`).join("");
-}
 document.addEventListener("keydown",e=>{
   const b=$("#lb"); if(!b||b.hidden) return;
   if(e.key==="Escape") lbClose();
@@ -1265,12 +1274,12 @@ document.addEventListener("click",e=>{
   const gt=e.target.closest("[data-goto]");
   if(gt){ S.svc=gt.dataset.goto; S.form=false; S.sent=false; refresh(); return; }
   const b=e.target.closest("button"); if(!b) return;
+  if(b.id==="gal-more"){ $("#gal").classList.add("all"); b.parentElement.classList.add("off"); return; }
   if(b.dataset.rm){ clearSvc(b.dataset.rm); refresh(); return; }
   if(b.dataset.cm){ S.finit.cloisonM2=Math.max(5,Math.min(100,S.finit.cloisonM2+(+b.dataset.cm))); refresh(); focusSame(`[data-cm="${b.dataset.cm}"]`); return; }
   if(b.dataset.fr){ S.finit.rooms=Math.max(1,Math.min(12,S.finit.rooms+(+b.dataset.fr))); refresh(); focusSame(`[data-fr="${b.dataset.fr}"]`); return; }
   if(b.dataset.rot!==undefined){ rotate3D(+b.dataset.rot); return; }
   if(b.id==="burger"){ const o=document.querySelector("header.top").classList.toggle("open"); b.setAttribute("aria-expanded",o); return; }
-  if(b.dataset.show){ svcShow=b.dataset.show; svcTabs(); svcPanel(); return; }
   if(b.dataset.h){ S.H[b.dataset.h]=isNaN(+b.dataset.v)?b.dataset.v:+b.dataset.v;
     const g=geoData(); S.clim.rooms=S.clim.rooms.filter(id=>g.rooms.some(r=>r.id===id)); S.solar.n=Math.min(S.solar.n,g.cap);
     houseBar(); refresh(); focusSame(`[data-h="${b.dataset.h}"][data-v="${b.dataset.v}"]`); return; }
@@ -1295,29 +1304,18 @@ document.addEventListener("click",e=>{
   if(b.id==="lang-fr") setLang("fr"); if(b.id==="lang-nl") setLang("nl");
 });
 document.addEventListener("input",e=>{ if(e.target.id==="of-name") S.name=e.target.value; if(e.target.id==="of-tel") S.tel=e.target.value; if(e.target.id==="of-cp") S.cp=e.target.value; });
-document.getElementById("cform").addEventListener("submit",e=>{ e.preventDefault();
+document.getElementById("cform")?.addEventListener("submit",e=>{ e.preventDefault();
   if(!$("#c-tel").value.trim()&&!$("#c-mail").value.trim()){ $("#c-err").hidden=false; return; }
   $("#c-err").hidden=true; $("#c-ok").hidden=false; });
 
-function svcPanel(){
-  if(!$("#svc-panel")) return;
-  const l=L(), x=svcShow;
-  $("#svc-panel").innerHTML=`<div class="svc-panel">
-    ${PHOTOS[x]?`<div class="photo has"><img src="img-svc-${x}.jpg" alt="" loading="lazy">${PHOTOS[x]===2?`<span class="illus">${l.illus3d}</span>`:""}<span class="tagchip">${l.sv[x][2]}</span></div>`
-               :`<div class="photo"><span>${l.photo}</span><span class="tagchip">${l.sv[x][2]}</span></div>`}
-    <div class="txt">
-      <h3>${l.sv[x][0]}</h3>
-      <p class="muted">${l.sv[x][1]}</p>
-      <ul>${l.svb[x].map(b=>`<li><svg class="leaf" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1c3 3 6 5 6 8a6 6 0 0 1-12 0c0-3 3-5 6-8Z"/></svg><span>${b}</span></li>`).join("")}</ul>
-      <p><button type="button" class="btn btn-gold" data-go="${x}"><span>${x==="chassis"?l.cta:l.lead_btn}</span><span class="arw"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 8h9M9 4l4 4-4 4"/></svg></span></button></p>
-    </div></div>`;
-}
 /* ---------- photos de chantier ---------- */
 const PHOTOS={chassis:1,iso:1,solar:2,clim:2,finit:1,reno:1,materiel:1};  // 2 = rendu 3D, pas une photo de chantier
 const GAL=Array.from({length:12},(_,i)=>`img-real${String(i+1).padStart(2,"0")}.jpg`);
 let lbI=0;
 function galerie(){
   const g=$("#gal"); if(!g) return;
+  const mb=$("#gal-more"); if(mb) mb.parentElement.classList.remove("off");
+  g.classList.remove("all");
   g.innerHTML=GAL.map((src,i)=>`<button type="button" data-lb="${i}" aria-label="${L().gal_open}"><img src="${src}" alt="" loading="lazy" decoding="async"></button>`).join("");
 }
 function lbOpen(i){
@@ -1343,17 +1341,36 @@ function avantApres(){
   const set=()=>ba.style.setProperty("--p",r.value+"%");
   r.addEventListener("input",set); set();
 }
+const SVC_URL={chassis:"chassis.html",iso:"isolation.html",solar:"solaire.html",
+               clim:"clim.html",finit:"finitions.html",reno:"renovation.html",materiel:"materiel.html"};
+const SVC_CARDS=[...SVCS,"materiel"];
+function svcGrid(){
+  const g=$("#svc-grid"); if(!g) return;
+  const l=L();
+  g.innerHTML=SVC_CARDS.map(x=>`<a class="svc-card" href="${SVC_URL[x]}">
+    <span class="ph">${PHOTOS[x]?`<img src="img-svc-${x}.jpg" alt="" loading="lazy">`:""}</span>
+    <span class="tx"><h3>${l.sv[x][0]}</h3><p>${l.sv[x][1]}</p><span class="go">${l.sv[x][2]} &rarr;</span></span></a>`).join("");
+}
 function applyLang(){
   const l=L(); document.documentElement.lang=lang;
   document.querySelectorAll("[data-i18n]").forEach(el=>{const v=l[el.dataset.i18n]; if(typeof v==="string") el.textContent=v;});
   document.querySelectorAll("[data-i18n-html]").forEach(el=>{el.innerHTML=l[el.dataset.i18nHtml];});
   const lf=$("#lang-fr"); if(lf){ lf.setAttribute("aria-pressed",lang==="fr"); $("#lang-nl").setAttribute("aria-pressed",lang==="nl"); }
   document.querySelectorAll("[data-nav]").forEach(a=>a.classList.toggle("on",a.dataset.nav===document.body.dataset.page));
-  pageContent();
-  matList(); galerie(); avantApres(); svcTabs(); svcPanel(); shown=0; all();
+  pageContent(); legalContent();
+  matList(); galerie(); avantApres(); svcGrid(); shown=0; all();
 }
 /* tarifs matériel & chantier (B2B) */
+function mtQuick(){
+  const q=$("#mt-quick"); if(!q) return;
+  const l=L();
+  q.innerHTML=[[l.mt_pelle,`${eur(MAT.pelle)} ${l.mt_h}`],
+               [l.mt_g1,`${eur(MAT.gruea)} ${l.mt_j}`],
+               [l.mt_g2,`${eur(MAT.grueb)} ${l.mt_j}`]]
+    .map(r=>`<div><span>${r[0]}</span><b>${r[1]}</b></div>`).join("");
+}
 function matList(){
+  mtQuick();
   const l=L(), row=(nm,val,sm)=>`<li><span>${nm}${sm?`<span class="sm">${sm}</span>`:""}</span><b>${val}</b></li>`;
   const t1=$("#mt-1"), t2=$("#mt-2"), t3=$("#mt-3"); if(!t1) return;
   t1.innerHTML=row(l.mt_pelle,`${eur(MAT.pelle)} <span style="font-weight:500;font-size:.8rem">${l.mt_h}</span>`);
@@ -1376,6 +1393,19 @@ function pageContent(){
     tb.closest(".ptable").hidden=!(pg.pr||[]).length; }
   const fq=$("#pg-faq");
   if(fq) fq.innerHTML=(pg.faq||[]).map(q=>`<details class="q"><summary>${q[0]}</summary><p>${q[1]}</p></details>`).join("");
+}
+function legalContent(){
+  const g=$("#legal"); if(!g) return;
+  const l=L().lg; if(!l) return;
+  const rows=a=>`<dl class="idcard">${a.map(r=>`<div><dt>${r[0]}</dt><dd>${r[1]}</dd></div>`).join("")}</dl>`;
+  const list=a=>`<ul class="lgl">${a.map(x=>`<li>${LEAF}<span>${x}</span></li>`).join("")}</ul>`;
+  g.innerHTML=`<h2>${l.s1}</h2>${rows(l.b1)}
+    <h2>${l.s2}</h2><p>${l.p2}</p>
+    <h2>${l.s3}</h2><p>${l.p3}</p>${list(l.b3)}
+    <h2>${l.s4}</h2><p>${l.p4}</p>
+    <h2>${l.s5}</h2><p>${l.p5}</p>
+    <h2>${l.s6}</h2><p>${l.p6}</p>
+    <p class="fine" style="margin-top:28px">${l.note}</p>`;
 }
 const LEAF='<svg class="leaf" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1c3 3 6 5 6 8a6 6 0 0 1-12 0c0-3 3-5 6-8Z"/></svg>';
 function setLang(x){ lang=x; try{localStorage.setItem("smj-lang",x)}catch(e){} applyLang(); }
@@ -1693,5 +1723,63 @@ materiel:{
       ["Welke regenwaterput kiezen?","Vijfduizend liter volstaat vaak voor toilet en tuin. Boven tienduizend is vooral nuttig als u ook de wasmachine voedt. We bekijken het volgens uw dakoppervlakte."],
       ["Levert u ver buiten Ronse?","De levering wordt per rit gefactureerd. Geef ons het adres van de werf, we zeggen hoeveel ritten nodig zijn."]]
 }};
+
+/* ---------- mentions légales & vie privée ---------- */
+T.fr.lg = {
+ h1:"Mentions légales et <span class='ac'>vie privée</span>",
+ lead:"Les informations que la loi belge impose à tout site commercial, et ce qu’on fait de vos données.",
+ s1:"Qui édite ce site",
+ b1:[["Dénomination","S. MAJESTIC"],
+     ["Forme juridique","Société à responsabilité limitée (SRL / BV)"],
+     ["Siège social","Sint-Cornelisstraat 59, 9600 Ronse, Belgique"],
+     ["Numéro d’entreprise (BCE)","BE 1020.521.459"],
+     ["Numéro de TVA","BE 1020.521.459"],
+     ["Date de constitution","27 février 2025"],
+     ["Téléphone","[à compléter]"],
+     ["E-mail","[à compléter]"]],
+ s2:"Les prix affichés sur ce site",
+ p2:"Le calculateur donne une <b>estimation</b>, pas une offre. Il se base sur des dimensions standard et sur la maison que vous réglez vous-même à l’écran. Le prix définitif est confirmé par écrit après la visite et la prise de mesures, qui sont gratuites et sans engagement. Une estimation affichée ici ne constitue donc pas un engagement contractuel au sens de l’article VI.2 du Code de droit économique.",
+ s3:"Ce qu’on fait de vos données",
+ p3:"Quand vous remplissez le formulaire, vous nous transmettez votre nom, votre téléphone, éventuellement votre e-mail, votre code postal et la description de votre projet. On s’en sert uniquement pour vous rappeler et établir votre devis. C’est la base légale des « mesures précontractuelles » (RGPD, article 6.1.b).",
+ b3:["On ne vend ni ne loue vos données à personne.",
+     "On ne les transmet qu’à l’installateur certifié concerné si votre demande porte sur des panneaux solaires ou une climatisation.",
+     "On les conserve trois ans après le dernier contact, puis on les supprime.",
+     "Vous pouvez demander à les consulter, les corriger ou les effacer : écrivez-nous, on répond dans le mois."],
+ s4:"Cookies",
+ p4:"Ce site ne dépose <b>aucun cookie publicitaire ni de mesure d’audience</b>. Votre navigateur retient seulement la langue que vous choisissez (FR ou NL), et cette information ne quitte jamais votre appareil. C’est pour cette raison qu’aucune bannière cookies ne vous est demandée.",
+ s5:"Photos et contenus",
+ p5:"Les photos de chantier publiées sur ce site sont des réalisations de S. Majestic. Les vues en 3D, signalées par la mention « Vue 3D », sont des illustrations générées par le configurateur : ce ne sont pas des photos d’installations existantes. Les textes, photos et illustrations ne peuvent pas être réutilisés sans accord écrit.",
+ s6:"Réclamation",
+ p6:"Si quelque chose ne va pas, parlez-nous-en d’abord : c’est souvent plus rapide. Pour un litige de consommation, vous pouvez saisir le Service de médiation pour le consommateur (mediationconsommateur.be) ou la plateforme européenne de règlement en ligne. Pour une question de données personnelles, vous pouvez introduire une plainte auprès de l’Autorité de protection des données (autoriteprotectiondonnees.be).",
+ note:"Dernière mise à jour : octobre 2026. Téléphone et e-mail restent à compléter avant la mise en ligne définitive."
+};
+T.nl.lg = {
+ h1:"Juridische informatie en <span class='ac'>privacy</span>",
+ lead:"De gegevens die de Belgische wet van elke commerciële website eist, en wat we met uw gegevens doen.",
+ s1:"Wie deze site uitgeeft",
+ b1:[["Benaming","S. MAJESTIC"],
+     ["Rechtsvorm","Besloten Vennootschap (BV)"],
+     ["Maatschappelijke zetel","Sint-Cornelisstraat 59, 9600 Ronse, België"],
+     ["Ondernemingsnummer (KBO)","BE 1020.521.459"],
+     ["Btw-nummer","BE 1020.521.459"],
+     ["Oprichtingsdatum","27 februari 2025"],
+     ["Telefoon","[aan te vullen]"],
+     ["E-mail","[aan te vullen]"]],
+ s2:"De prijzen op deze site",
+ p2:"De rekenmodule geeft een <b>raming</b>, geen offerte. Ze vertrekt van standaardafmetingen en van de woning die u zelf op het scherm instelt. De definitieve prijs wordt schriftelijk bevestigd na het gratis en vrijblijvende bezoek en de opmeting. Een raming op deze site is dus geen contractuele verbintenis in de zin van artikel VI.2 van het Wetboek van economisch recht.",
+ s3:"Wat we met uw gegevens doen",
+ p3:"Wanneer u het formulier invult, bezorgt u ons uw naam, telefoonnummer, eventueel uw e-mailadres, uw postcode en de omschrijving van uw project. We gebruiken die enkel om u terug te bellen en uw offerte op te maken. Dat is de rechtsgrond van de « precontractuele maatregelen » (AVG, artikel 6.1.b).",
+ b3:["We verkopen of verhuren uw gegevens aan niemand.",
+     "We geven ze enkel door aan de betrokken gecertificeerde installateur als uw aanvraag over zonnepanelen of airco gaat.",
+     "We bewaren ze drie jaar na het laatste contact en wissen ze daarna.",
+     "U mag ze opvragen, laten verbeteren of laten wissen: schrijf ons, we antwoorden binnen de maand."],
+ s4:"Cookies",
+ p4:"Deze site plaatst <b>geen enkele reclame- of analysecookie</b>. Uw browser onthoudt enkel de taal die u kiest (FR of NL), en die informatie verlaat uw toestel nooit. Daarom krijgt u ook geen cookiebanner te zien.",
+ s5:"Foto’s en inhoud",
+ p5:"De werffoto’s op deze site zijn realisaties van S. Majestic. De 3D-beelden, aangeduid met « 3D-zicht », zijn illustraties uit de configurator: het zijn geen foto’s van bestaande installaties. Teksten, foto’s en illustraties mogen niet worden hergebruikt zonder schriftelijke toestemming.",
+ s6:"Klacht",
+ p6:"Loopt er iets mis, spreek ons er eerst over aan: dat gaat meestal sneller. Voor een consumentengeschil kunt u terecht bij de Consumentenombudsdienst (consumentenombudsdienst.be) of bij het Europese platform voor onlinegeschillenbeslechting. Voor een vraag over persoonsgegevens kunt u klacht indienen bij de Gegevensbeschermingsautoriteit (gegevensbeschermingsautoriteit.be).",
+ note:"Laatste update: oktober 2026. Telefoon en e-mail moeten nog ingevuld worden vóór de definitieve publicatie."
+};
 
 applyLang();
