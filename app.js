@@ -1253,6 +1253,8 @@ function tick(){
   const target=r50(t.lo);   // on affiche le bas de fourchette : « à partir de »
   cancelAnimationFrame(anim);
   const from=shown, t0=performance.now(), dur=420, reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  // onglet en arrière-plan : requestAnimationFrame est gelé, on écrit le prix tout de suite
+  if(document.hidden){ el.innerHTML=`<small>${l.p_from}</small>${eur(target)}`; shown=target; el.classList.remove("pulse"); return; }
   if(from!==target) el.classList.add("pulse");
   const step=now=>{ const p=reduce?1:Math.min(1,(now-t0)/dur), v=from+(target-from)*(1-Math.pow(1-p,3));
     el.innerHTML=`<small>${l.p_from}</small>${eur(r50(v))}`; if(p<1) anim=requestAnimationFrame(step); else {shown=target; el.classList.remove("pulse");} };
