@@ -69,13 +69,13 @@ fr:{
  rv_note:"Avis Google",rv_sub:"À connecter quand la fiche sera créée",
  sv_h2:"Qu’est-ce qu’on peut <span class='ac'>faire chez vous ?</span>",
  br_h:"Les marques avec <span class='ac'>lesquelles on travaille.</span>",br_p:"Châssis, isolation, panneaux solaires, pompes à chaleur : on travaille avec des fabricants reconnus.",br_slot:"Logo à ajouter",
- tr_chip:"Savoir-faire depuis [X] ans",
+ tr_chip:"10 ans de métier",
  tr_h:"Pour le placement, l’entretien <span class='ac'>et les réparations.</span>",
  tr_1h:"Un devis clair",tr_1p:"Vous savez quels matériaux sont compris dans le prix.",
  tr_2h:"Des choix expliqués",tr_2p:"On vous dit pourquoi on conseille tel châssis ou tel isolant.",
  tr_3h:"Aussi après le chantier",tr_3p:"Appelez-nous pour un entretien, une réparation ou une question.",
  tr_link:"En savoir plus sur S.Majestic",
- zone_l:"Depuis <b>Ronse</b>, chez vous en <b>Flandre-Orientale et dans le Hainaut</b>.",zone_r:"Oudenaarde, Geraardsbergen, Kluisbergen, Tournai, Frasnes : on passe aussi chez vous.",
+ zone_l:"Depuis <b>Renaix</b>, chez vous en <b>Flandre-Orientale et dans le Hainaut</b>.",zone_r:"Oudenaarde, Geraardsbergen, Kluisbergen, Tournai, Frasnes : on passe aussi chez vous.",
  strip_h:"Un entretien ou une réparation sur votre installation ?",
  strip_p:"Donnez-nous la marque, le type d’appareil ou de châssis et décrivez le problème.",strip_btn:"Demander une intervention",
  wk_h2:"Nos chantiers, <span class='ac'>en vrai.</span>",
@@ -106,7 +106,7 @@ fr:{
  w2_h:"Un seul contact pour tout",w2_p:"Châssis, isolation, panneaux solaires, clim : une seule personne suit votre chantier du début à la fin.",
  w3_h:"Les papiers, c’est pour nous",w3_p:"TVA à 6 %, primes régionales, dossiers : on vérifie ce à quoi vous avez droit et on prépare les documents.",
  tm_h:"Ce que vos clients diront bientôt ici",tm_p:"Cet emplacement affichera vos vrais avis Google dès que la fiche de l’entreprise sera créée.",
- tm_q:"Votre avis client s’affichera ici, avec la note et le prénom du client.",tm_who:"Prénom · Ronse",
+ tm_q:"Votre avis client s’affichera ici, avec la note et le prénom du client.",tm_who:"Prénom · Renaix",
  end_h:"Votre prix en une minute, votre devis en une visite",
  end_p:"Commencez par le configurateur : cliquez sur votre maison, voyez le prix, et demandez votre offre détaillée si ça vous convient.",
 u_hours:"Joignable 7j/7 · on rappelle au plus vite",u_zone:"Flandre-Orientale & Hainaut",u_demo:"",
@@ -218,14 +218,14 @@ u_hours:"Joignable 7j/7 · on rappelle au plus vite",u_zone:"Flandre-Orientale &
      reno:["Rénovation","Salle de bain, cuisine, toiture, façade ou la maison entière.","Demander un prix"],
      materiel:["Matériel et chantier","Mini-pelle avec chauffeur, grue à la journée, citerne d’eau de pluie.","Voir les tarifs"]},
  ba_h2:"Le même châssis, <span class='ac'>avant et après.</span>",
- ba_p:"Maison de rangée à Ronse : porte d’entrée et châssis remplacés, double vitrage. Glissez le curseur.",
+ ba_p:"Maison de rangée à Renaix : porte d’entrée et châssis remplacés, double vitrage. Glissez le curseur.",
  ba_avant:"Avant",ba_apres:"Après",illus3d:"Vue 3D",
  ba_note:"Chantier réalisé par S.Majestic. Glissez le curseur pour comparer.",
- gal_more:"Voir les 12 photos",gal_open:"Agrandir la photo",gal_prev:"Photo précédente",gal_next:"Photo suivante",gal_close:"Fermer",
+ gal_alt:"Chantier S.Majestic à Renaix, photo",gal_more:"Voir les 12 photos",gal_open:"Agrandir la photo",gal_prev:"Photo précédente",gal_next:"Photo suivante",gal_close:"Fermer",
  photo:"Photo à venir",pg_faq_h:"Questions fréquentes",
  h3d_load:"Chargement de la maison en 3D…",h3d_err:"La vue 3D n’a pas pu se charger. Le calculateur fonctionne quand même : utilisez les boutons + et − à droite.",h3d_retry:"Réessayer",
  ab_ph:"Photo du patron sur chantier",ab_h:"Qui est derrière S.Majestic ?",
- ab_p1:"S.Majestic, c’est <span class='ph'>[Prénom]</span>, <span class='ph'>[X]</span> ans de métier dans la rénovation à Ronse et dans la région. Quand vous appelez, c’est à lui que vous parlez, et c’est lui qui vient mesurer chez vous.",
+ ab_p1:"Chez S.Majestic, il n’y a pas de commercial. <b>Un seul patron, 10 ans de métier</b> dans la rénovation à Renaix et dans la région : quand vous appelez, c’est à lui que vous parlez, et c’est lui qui vient mesurer chez vous.",
  ab_p2:"Pour les panneaux solaires et la clim, il travaille avec des installateurs certifiés qu’il connaît bien. Vous gardez le même contact du devis jusqu’à la fin du chantier.",
  f1_b:"Un seul contact",f1_s:"du devis à la fin du chantier",f2_b:"Visite gratuite",f2_s:"mesures et devis sans engagement",f3_b:"FR et NL",f3_s:"des deux côtés de la frontière",
  wk_h:"Nos réalisations",wk_p:"Des vraies photos de nos chantiers, avant et après.",
@@ -254,7 +254,7 @@ u_hours:"Joignable 7j/7 · on rappelle au plus vite",u_zone:"Flandre-Orientale &
  ft_copy:"© 2026 S. Majestic SRL · BE 1020.521.459",
  ft_legal:"Mentions légales et vie privée",
  lg_h1:"Mentions légales et <span class='ac'>vie privée</span>",lg_lead:"Les informations que la loi belge impose à tout site commercial, et ce qu’on fait de vos données.",
- ft_about:"Construction et rénovation à Ronse et dans la région. Châssis, isolation, solaire, clim.",ft_svc:"Services",ft_zone:"Zone",ft_contact:"Contact",ft_h1:"Lun–ven 8h–18h",ft_h2:"Sam 9h–13h",
+ ft_about:"Construction et rénovation à Renaix et dans la région. Châssis, isolation, solaire, clim.",ft_svc:"Services",ft_zone:"Zone",ft_contact:"Contact",ft_h1:"Joignable 7j/7",ft_h2:"On rappelle au plus vite",
  ft_demo:"",
  mb_l:"Votre prix",mb_from:"dès",mb_cta:"Mon offre"
 },
@@ -266,7 +266,7 @@ nl:{
  rv_note:"Google-reviews",rv_sub:"Te koppelen zodra de fiche bestaat",
  sv_h2:"Wat kunnen we <span class='ac'>voor u doen?</span>",
  br_h:"De merken <span class='ac'>waarmee we werken.</span>",br_p:"Ramen, isolatie, zonnepanelen, warmtepompen: we werken met gekende fabrikanten.",br_slot:"Logo toe te voegen",
- tr_chip:"Vakmanschap sinds [X] jaar",
+ tr_chip:"10 jaar ervaring",
  tr_h:"Voor plaatsing, onderhoud <span class='ac'>en herstellingen.</span>",
  tr_1h:"Een duidelijke offerte",tr_1p:"U weet welke materialen in de prijs zitten.",
  tr_2h:"Uitgelegde keuzes",tr_2p:"We zeggen u waarom we dat raam of die isolatie voorstellen.",
@@ -418,11 +418,11 @@ u_hours:"7/7 bereikbaar · we bellen zo snel mogelijk terug",u_zone:"Oost-Vlaand
  ba_p:"Rijwoning in Ronse: voordeur en ramen vervangen, dubbele beglazing. Sleep de schuifregelaar.",
  ba_avant:"Voor",ba_apres:"Na",illus3d:"3D-zicht",
  ba_note:"Werf uitgevoerd door S.Majestic. Sleep de schuifregelaar om te vergelijken.",
- gal_more:"Bekijk de 12 foto's",gal_open:"Foto vergroten",gal_prev:"Vorige foto",gal_next:"Volgende foto",gal_close:"Sluiten",
+ gal_alt:"Werf van S.Majestic in Ronse, foto",gal_more:"Bekijk de 12 foto's",gal_open:"Foto vergroten",gal_prev:"Vorige foto",gal_next:"Volgende foto",gal_close:"Sluiten",
  photo:"Foto volgt",pg_faq_h:"Veelgestelde vragen",
  h3d_load:"De 3D-woning wordt geladen…",h3d_err:"Het 3D-zicht kon niet laden. De rekenmodule werkt wel: gebruik de knoppen + en − rechts.",h3d_retry:"Opnieuw proberen",
  ab_ph:"Foto van de zaakvoerder op de werf",ab_h:"Wie zit er achter S.Majestic?",
- ab_p1:"S.Majestic, dat is <span class='ph'>[Voornaam]</span>, <span class='ph'>[X]</span> jaar ervaring in renovatie in Ronse en omgeving. Als u belt, spreekt u met hem, en hij komt ook zelf bij u opmeten.",
+ ab_p1:"Bij S.Majestic is er geen verkoper. <b>Eén zaakvoerder, 10 jaar ervaring</b> in renovatie in Ronse en omgeving: als u belt, spreekt u met hem, en hij komt ook zelf bij u opmeten.",
  ab_p2:"Voor zonnepanelen en airco werkt hij met gecertificeerde installateurs die hij goed kent. U houdt hetzelfde contact van offerte tot oplevering.",
  f1_b:"Eén contact",f1_s:"van offerte tot oplevering",f2_b:"Gratis bezoek",f2_s:"opmeting en offerte vrijblijvend",f3_b:"NL en FR",f3_s:"aan beide kanten van de taalgrens",
  wk_h:"Onze realisaties",wk_p:"Echte foto’s van onze werven, voor en na.",
@@ -1396,7 +1396,7 @@ function galerie(){
   const g=$("#gal"); if(!g) return;
   const mb=$("#gal-more"); if(mb) mb.parentElement.classList.remove("off");
   g.classList.remove("all");
-  g.innerHTML=GAL.map((src,i)=>`<button type="button" data-lb="${i}" aria-label="${L().gal_open}"><img src="${src}" alt="" loading="lazy" decoding="async"></button>`).join("");
+  g.innerHTML=GAL.map((src,i)=>`<button type="button" data-lb="${i}" aria-label="${L().gal_open}"><img src="${src}" alt="${L().gal_alt} ${i+1}" loading="lazy" decoding="async"></button>`).join("");
 }
 function lbOpen(i){
   lbI=(i+GAL.length)%GAL.length;
@@ -1429,7 +1429,7 @@ function svcGrid(){
   const g=$("#svc-grid"); if(!g) return;
   const l=L();
   g.innerHTML=SVC_CARDS.map((x,i)=>`<a class="svc-card${i===SVC_CARDS.length-1?" wide":""}" href="${SVC_URL[x]}">
-    <span class="ph">${PHOTOS[x]===2?`<span class="tag">${l.illus3d}</span>`:""}${PHOTOS[x]?`<img src="img-svc-${x}.jpg" alt="" loading="lazy">`:""}</span>
+    <span class="ph">${PHOTOS[x]===2?`<span class="tag">${l.illus3d}</span>`:""}${PHOTOS[x]?`<img src="img-svc-${x}.jpg" alt="${l.sv[x][0]} — S.Majestic" loading="lazy">`:""}</span>
     <span class="tx"><h3>${l.sv[x][0]}</h3><p>${l.sv[x][1]}</p><span class="go">${l.sv[x][2]} <i>&rarr;</i></span></span></a>`).join("");
   svcGlow(g);
 }
@@ -1535,7 +1535,7 @@ T.fr.steps = [
 ];
 T.fr.pg = {
 chassis:{
- h1:"Châssis et portes à <span class='ac'>Ronse</span> et dans la région",
+ h1:"Châssis et portes à <span class='ac'>Renaix</span> et dans la région",
  lead:"PVC, aluminium ou bois, fabriqués sur mesure et posés par nos équipes. Calculez votre prix ici, en deux minutes, sans rendez-vous.",
  bul:["Devis gratuit et sans engagement","Dépose des anciens châssis comprise","TVA 6 % si votre maison a plus de 10 ans"],
  inc_h:"Ce qui est compris dans le prix",
@@ -1680,7 +1680,7 @@ materiel:{
  faq:[["Faut-il un permis pour la mini-pelle ?","Non, puisqu’elle vient avec un chauffeur. Vous indiquez ce qu’il faut creuser, il s’en occupe."],
       ["La grue vient avec un grutier ?","À confirmer par téléphone selon le modèle et le chantier. Appelez-nous avec les détails, on vous dit ce qui est possible."],
       ["Quelle citerne choisir ?","Cinq mille litres suffisent souvent pour les toilettes et le jardin. Au-delà de dix mille, c’est surtout utile si vous alimentez aussi la machine à laver. On en parle selon la surface de votre toiture."],
-      ["Vous livrez loin de Ronse ?","La livraison se facture par voyage. Donnez-nous l’adresse du chantier, on vous dit combien de voyages sont nécessaires."]]
+      ["Vous livrez loin de Renaix ?","La livraison se facture par voyage. Donnez-nous l’adresse du chantier, on vous dit combien de voyages sont nécessaires."]]
 }};
 
 T.nl.steps_h = "Hoe het verloopt";
