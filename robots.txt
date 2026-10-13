@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://younesabdellati22-beep.github.io/smajestic/sitemap.xml

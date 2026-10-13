@@ -453,7 +453,15 @@ u_hours:"Ma–vr 8u–18u · za 9u–13u",u_zone:"Oost-Vlaanderen & Henegouwen",
  mb_l:"Uw prijs",mb_from:"vanaf",mb_cta:"Mijn offerte"
 }};
 
-let lang="fr"; try{const s=localStorage.getItem("smj-lang"); if(s==="fr"||s==="nl") lang=s;}catch(e){}
+/* une URL par langue : la page dit dans quelle langue elle est */
+let lang=(document.body&&document.body.dataset.lang==="nl")?"nl":"fr";
+/* table des équivalences FR <-> NL, pour que le bouton change de page */
+const PAIR={"index.html":"nl.html","chassis.html":"ramen.html","isolation.html":"isolatie.html",
+  "solaire.html":"zonnepanelen.html","clim.html":"airco.html","finitions.html":"afwerking.html",
+  "renovation.html":"renovatie.html","materiel.html":"materieel.html","mentions.html":"juridisch.html"};
+const PAIR_BACK={}; for(const k in PAIR) PAIR_BACK[PAIR[k]]=k;
+function here(){ const f=location.pathname.split("/").pop(); return f||"index.html"; }
+function twin(to){ const f=here(); return to==="nl" ? (PAIR[f]||"nl.html") : (PAIR_BACK[f]||"index.html"); }
 const S={svc:((document.body&&document.body.dataset.svc)||"chassis"),H:{lv:2,cols:3,type:"mit",depth:8},q:{std:0,small:0,large:0,door:0,pf:0,slide:0},mat:"pvc",col:"white",gl:"double",age:"old",
  iso:{zones:[],wall:"creux",when:null},solar:{roof:null,bill:null,n:0,manual:false,when:null},clim:{goal:null,rooms:[],when:null},finit:{what:[],scope:"full",rooms:2,etat:"moyen",plafo:"vieux",cloison:"stud",cloisonM2:10,rf:"rf30",sol:"parquet",fini:"mono",echaf:null,when:null},reno:{what:null,when:null},
  form:false,sent:false,name:"",tel:"",cp:""};
@@ -1311,7 +1319,8 @@ document.addEventListener("click",e=>{
   if(b.id==="of-back"){ S.form=false; price(); return; }
   if(b.id==="of-send"){ S.name=$("#of-name").value.trim(); S.tel=$("#of-tel").value.trim(); S.cp=$("#of-cp").value.trim();
     if(!S.tel){ $("#of-err").hidden=false; $("#of-tel").focus(); return; } S.sent=true; S.form=false; price(); return; }
-  if(b.id==="lang-fr") setLang("fr"); if(b.id==="lang-nl") setLang("nl");
+  if(b.id==="lang-fr"&&lang!=="fr"){ location.href=twin("fr")+location.hash; return; }
+  if(b.id==="lang-nl"&&lang!=="nl"){ location.href=twin("nl")+location.hash; return; }
 });
 document.addEventListener("input",e=>{ if(e.target.id==="of-name") S.name=e.target.value; if(e.target.id==="of-tel") S.tel=e.target.value; if(e.target.id==="of-cp") S.cp=e.target.value; });
 document.getElementById("cform")?.addEventListener("submit",e=>{ e.preventDefault();
@@ -1351,8 +1360,9 @@ function avantApres(){
   const set=()=>ba.style.setProperty("--p",r.value+"%");
   r.addEventListener("input",set); set();
 }
-const SVC_URL={chassis:"chassis.html",iso:"isolation.html",solar:"solaire.html",
-               clim:"clim.html",finit:"finitions.html",reno:"renovation.html",materiel:"materiel.html"};
+const SVC_FR={chassis:"chassis.html",iso:"isolation.html",solar:"solaire.html",
+              clim:"clim.html",finit:"finitions.html",reno:"renovation.html",materiel:"materiel.html"};
+const SVC_URL=new Proxy({},{get:(_,k)=>{const f=SVC_FR[k]; return lang==="nl"?(PAIR[f]||f):f;}});
 const SVC_CARDS=[...SVCS,"materiel"];
 function svcGrid(){
   const g=$("#svc-grid"); if(!g) return;
@@ -1453,7 +1463,7 @@ function legalContent(){
     <p class="fine" style="margin-top:28px">${l.note}</p>`;
 }
 const LEAF='<svg class="leaf" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1c3 3 6 5 6 8a6 6 0 0 1-12 0c0-3 3-5 6-8Z"/></svg>';
-function setLang(x){ lang=x; try{localStorage.setItem("smj-lang",x)}catch(e){} applyLang(); }
+function setLang(x){ if(x===lang) return; location.href=twin(x); }
 /* ---------- contenu des pages ---------- */
 T.fr.steps_h = "Comment ça se passe";
 T.fr.steps = [
