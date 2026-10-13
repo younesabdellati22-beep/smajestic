@@ -62,7 +62,7 @@ const IC={
 
 const T={
 fr:{
- u_tel:"Tél. +32 4xx xx xx xx",
+ u_tel:"Tél. +32 478 39 02 70",
  h1_html:"Votre maison. <span class='ac'>Notre métier.</span>",
  cta_b2:"Parler à quelqu’un",hero_chk:"Devis gratuit, visite sans engagement, en français et en néerlandais.",
  hero_chip_b:"Prix en 1 minute",hero_chip_s:"Cliquez sur votre maison, le prix s’affiche.",
@@ -109,7 +109,7 @@ fr:{
  tm_q:"Votre avis client s’affichera ici, avec la note et le prénom du client.",tm_who:"Prénom · Ronse",
  end_h:"Votre prix en une minute, votre devis en une visite",
  end_p:"Commencez par le configurateur : cliquez sur votre maison, voyez le prix, et demandez votre offre détaillée si ça vous convient.",
-u_hours:"Lun–ven 8h–18h · sam 9h–13h",u_zone:"Flandre-Orientale & Hainaut",u_demo:"Maquette : téléphone et e-mail à compléter",
+u_hours:"Joignable 7j/7 · on rappelle au plus vite",u_zone:"Flandre-Orientale & Hainaut",u_demo:"",
  tagline:"Construction & Rénovation",
  n1:"Châssis",n2:"Isolation",n3:"Solaire",n4:"Clim & PAC",n5:"Rénovation",n6:"Réalisations",n7:"Contact",cta:"Calculer mon prix",
  n8:"Matériel",
@@ -189,7 +189,8 @@ u_hours:"Lun–ven 8h–18h · sam 9h–13h",u_zone:"Flandre-Orientale & Hainaut
  p_fine:"Tailles standard et conditions de pose normales. Dépose de l’ancien, évacuation, échafaudage, étage ou accès difficile se chiffrent lors de la visite.",
  of_name:"Prénom",of_name2:"Nom",of_tel:"Téléphone",of_cp:"Code postal",of_send:"Rappelez-moi",of_back:"Annuler",
  of_err:"Indiquez votre numéro de téléphone pour qu’on puisse vous rappeler.",
- of_ok_h:"Merci, c’est noté.",of_ok_p:"On vous rappelle rapidement.",of_demo:"Maquette : rien n’a été envoyé.",
+ of_sending:"Envoi…",of_fail:"L’envoi n’a pas abouti. Appelez-nous au +32 478 39 02 70 ou écrivez à info@smajestic.be.",
+ of_ok_h:"Merci, c’est noté.",of_ok_p:"On vous rappelle au plus vite. Pour aller plus vite : +32 478 39 02 70.",of_demo:"",
  of_intro:"On vous rappelle pour affiner le prix et vous proposer nos remises du moment.",
  of_confirm:"Vous demandez un rappel, pas un devis. Le montant affiché est une estimation : le prix définitif est fixé après la visite, gratuite et sans engagement.",
  lead_lbl:"Votre prix",lead_v:"Sur rappel",lead_meta:"Gratuit et sans engagement",lead_btn:"Recevoir mon prix",
@@ -254,11 +255,11 @@ u_hours:"Lun–ven 8h–18h · sam 9h–13h",u_zone:"Flandre-Orientale & Hainaut
  ft_legal:"Mentions légales et vie privée",
  lg_h1:"Mentions légales et <span class='ac'>vie privée</span>",lg_lead:"Les informations que la loi belge impose à tout site commercial, et ce qu’on fait de vos données.",
  ft_about:"Construction et rénovation à Ronse et dans la région. Châssis, isolation, solaire, clim.",ft_svc:"Services",ft_zone:"Zone",ft_contact:"Contact",ft_h1:"Lun–ven 8h–18h",ft_h2:"Sam 9h–13h",
- ft_demo:"Maquette : téléphone, e-mail et horaires à confirmer",
+ ft_demo:"",
  mb_l:"Votre prix",mb_from:"dès",mb_cta:"Mon offre"
 },
 nl:{
- u_tel:"Tel. +32 4xx xx xx xx",
+ u_tel:"Tel. +32 478 39 02 70",
  h1_html:"Uw woning. <span class='ac'>Ons vakmanschap.</span>",
  cta_b2:"Iemand spreken",hero_chk:"Gratis offerte, vrijblijvend bezoek, in het Nederlands en het Frans.",
  hero_chip_b:"Prijs in 1 minuut",hero_chip_s:"Klik op uw woning en de prijs verschijnt.",
@@ -305,7 +306,7 @@ nl:{
  tm_q:"Hier komt de review van uw klant, met score en voornaam.",tm_who:"Voornaam · Ronse",
  end_h:"Uw prijs in één minuut, uw offerte in één bezoek",
  end_p:"Begin met de configurator: klik op uw woning, bekijk de prijs en vraag uw gedetailleerde offerte aan als het u bevalt.",
-u_hours:"Ma–vr 8u–18u · za 9u–13u",u_zone:"Oost-Vlaanderen & Henegouwen",u_demo:"Mock-up: telefoon en e-mail aan te vullen",
+u_hours:"7/7 bereikbaar · we bellen zo snel mogelijk terug",u_zone:"Oost-Vlaanderen & Henegouwen",u_demo:"",
  tagline:"Bouw & Renovatie",
  n1:"Ramen",n2:"Isolatie",n3:"Zonnepanelen",n4:"Airco & WP",n5:"Renovatie",n6:"Realisaties",n7:"Contact",cta:"Bereken mijn prijs",
  n8:"Materieel",
@@ -385,7 +386,8 @@ u_hours:"Ma–vr 8u–18u · za 9u–13u",u_zone:"Oost-Vlaanderen & Henegouwen",
  p_fine:"Standaardmaten en normale plaatsingsomstandigheden. Uitbreken, afvoer, stelling, verdieping of moeilijke toegang worden bij het bezoek begroot.",
  of_name:"Voornaam",of_name2:"Naam",of_tel:"Telefoon",of_cp:"Postcode",of_send:"Bel mij terug",of_back:"Annuleren",
  of_err:"Vul uw telefoonnummer in zodat we u kunnen terugbellen.",
- of_ok_h:"Bedankt, genoteerd.",of_ok_p:"We bellen u snel terug.",of_demo:"Mock-up: er werd niets verstuurd.",
+ of_sending:"Versturen…",of_fail:"Verzenden is niet gelukt. Bel ons op +32 478 39 02 70 of mail naar info@smajestic.be.",
+ of_ok_h:"Bedankt, genoteerd.",of_ok_p:"We bellen u zo snel mogelijk terug. Sneller? Bel +32 478 39 02 70.",of_demo:"",
  of_intro:"We bellen u terug om de prijs te verfijnen en u onze huidige kortingen voor te stellen.",
  of_confirm:"U vraagt een telefoontje aan, geen offerte. Het getoonde bedrag is een raming: de definitieve prijs wordt bepaald na het gratis en vrijblijvende bezoek.",
  lead_lbl:"Uw prijs",lead_v:"Na terugbellen",lead_meta:"Gratis en vrijblijvend",lead_btn:"Mijn prijs ontvangen",
@@ -449,7 +451,7 @@ u_hours:"Ma–vr 8u–18u · za 9u–13u",u_zone:"Oost-Vlaanderen & Henegouwen",
  ft_legal:"Juridische informatie en privacy",
  lg_h1:"Juridische informatie en <span class='ac'>privacy</span>",lg_lead:"De gegevens die de Belgische wet van elke commerciële website eist, en wat we met uw gegevens doen.",
  ft_about:"Bouw en renovatie in Ronse en omgeving. Ramen, isolatie, zonnepanelen, airco.",ft_svc:"Diensten",ft_zone:"Regio",ft_contact:"Contact",ft_h1:"Ma–vr 8u–18u",ft_h2:"Za 9u–13u",
- ft_demo:"Mock-up: telefoon, e-mail en openingsuren te bevestigen",
+ ft_demo:"",
  mb_l:"Uw prijs",mb_from:"vanaf",mb_cta:"Mijn offerte"
 }};
 
@@ -1261,6 +1263,47 @@ function mbar(){ if(!$("#mb-v")) return;
   $("#mb-l").textContent = t.n ? (t.n>1?l.cart_t:l.mb_l) : l["s_"+S.svc];
   $("#mb-v").textContent = t.n ? l.mb_from+" "+eur(r50(t.lo)) : (S.svc==="reno"?l.lead_v:"—");
   $("#mb-cta").textContent = l.mb_cta; }
+/* ================== COORDONNÉES & ENVOI DES DEMANDES ================== */
+const TEL_NUM = "+32478390270";          // pour les liens tel:
+const WA_NUM  = "32478390270";           // pour wa.me
+const MAIL    = "info@smajestic.be";
+/* FormSubmit relaie le formulaire vers la boîte mail, sans serveur.
+   La toute première demande déclenche un e-mail de confirmation à activer une fois. */
+const FORM_EP = "https://formsubmit.co/ajax/" + MAIL;
+
+/* le détail de ce que le client a configuré, pour que le devis parte tout de suite */
+function recap(){
+  const t=cartTotal(), l=L();
+  if(!t.n) return l["s_"+S.svc] || "";
+  const parts=t.items.map(({svc,c})=>{
+    if(svc==="chassis"){
+      const d=TYPES.filter(k=>S.q[k]).map(k=>`${S.q[k]}x ${l.it[k]}`).join(", ");
+      return `${l["s_"+svc]} : ${d} — ${(l.o_mat||{})[S.mat]||S.mat}, ${(l.o_gl||{})[S.gl]||S.gl}, ${(l.o_col||{})[S.col]||S.col}`;
+    }
+    if(svc==="iso")   return `${l["s_"+svc]} : ${(S.iso.zones||[]).join(", ")}`;
+    if(svc==="solar") return `${l["s_"+svc]} : ${S.solar.n} panneaux`;
+    if(svc==="clim")  return `${l["s_"+svc]} : ${(S.clim.rooms||[]).length} pièce(s)`;
+    if(svc==="finit") return `${l["s_"+svc]} : ${(S.finit.what||[]).join(", ")}`;
+    return l["s_"+svc];
+  });
+  return parts.join(" | ");
+}
+
+function sendLead(data){
+  const body = Object.assign({
+    _subject: "Demande via le site — " + (data.nom || data.telephone || "sans nom"),
+    _template: "table",
+    _captcha: "false",
+    page: location.pathname.split("/").pop() || "index.html",
+    langue: lang
+  }, data);
+  return fetch(FORM_EP, {
+    method: "POST",
+    headers: {"Content-Type":"application/json", "Accept":"application/json"},
+    body: JSON.stringify(body)
+  }).then(r => { if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); });
+}
+
 function setWa(){
   let txt=L().wa; const t=cartTotal();
   if(t.n){
@@ -1270,7 +1313,7 @@ function setWa(){
     });
     txt+=` — ${parts.join(" + ")}, ≈ ${eur(r50(t.sum))}`;
   } else if(S.svc!=="chassis") txt+=` (${L()["s_"+S.svc]})`;
-  document.querySelectorAll(".wa-link").forEach(a=>a.href="https://wa.me/?text="+encodeURIComponent(txt));
+  document.querySelectorAll(".wa-link").forEach(a=>a.href="https://wa.me/"+WA_NUM+"?text="+encodeURIComponent(txt));
 }
 function refresh(keepForm){ if(!keepForm) S.form=false; draw(); panel(); price(); tabs(); }
 function all(){ houseBar(); tabs(); refresh(); }
@@ -1318,14 +1361,32 @@ document.addEventListener("click",e=>{
   if(b.id==="open-form"){ S.form=true; price(); $("#of-name")?.focus(); return; }
   if(b.id==="of-back"){ S.form=false; price(); return; }
   if(b.id==="of-send"){ S.name=$("#of-name").value.trim(); S.tel=$("#of-tel").value.trim(); S.cp=$("#of-cp").value.trim();
-    if(!S.tel){ $("#of-err").hidden=false; $("#of-tel").focus(); return; } S.sent=true; S.form=false; price(); return; }
+    if(!S.tel){ $("#of-err").hidden=false; $("#of-tel").focus(); return; }
+    const t=cartTotal(), lg=L();
+    b.disabled=true; b.textContent=lg.of_sending;
+    sendLead({ nom:S.name||"—", telephone:S.tel, code_postal:S.cp||"—",
+               demande:recap(),
+               estimation: t.n ? (lg.p_from+" "+eur(r50(t.lo))+" / "+eur(r50(t.hi))) : "—",
+               origine:"calculateur" })
+      .then(()=>{ S.sent=true; S.form=false; price(); })
+      .catch(()=>{ b.disabled=false; b.textContent=lg.of_send;
+                   const e=$("#of-err"); if(e){ e.textContent=lg.of_fail; e.hidden=false; } });
+    return; }
   if(b.id==="lang-fr"&&lang!=="fr"){ location.href=twin("fr")+location.hash; return; }
   if(b.id==="lang-nl"&&lang!=="nl"){ location.href=twin("nl")+location.hash; return; }
 });
 document.addEventListener("input",e=>{ if(e.target.id==="of-name") S.name=e.target.value; if(e.target.id==="of-tel") S.tel=e.target.value; if(e.target.id==="of-cp") S.cp=e.target.value; });
 document.getElementById("cform")?.addEventListener("submit",e=>{ e.preventDefault();
-  if(!$("#c-tel").value.trim()&&!$("#c-mail").value.trim()){ $("#c-err").hidden=false; return; }
-  $("#c-err").hidden=true; $("#c-ok").hidden=false; });
+  const lg=L(), err=$("#c-err"), btn=e.target.querySelector('button[type="submit"]'), lbl=btn.innerHTML;
+  if(!$("#c-tel").value.trim()&&!$("#c-mail").value.trim()){ err.textContent=lg.of_err; err.hidden=false; return; }
+  err.hidden=true; btn.disabled=true; btn.textContent=lg.of_sending;
+  sendLead({ nom:$("#c-name").value.trim()||"—", telephone:$("#c-tel").value.trim()||"—",
+             email:$("#c-mail").value.trim()||"—", code_postal:$("#c-cp").value.trim()||"—",
+             message:$("#c-msg").value.trim()||"—", origine:"formulaire de contact" })
+    .then(()=>{ $("#c-ok").hidden=false; e.target.querySelectorAll("input,textarea").forEach(i=>i.value="");
+                btn.disabled=false; btn.innerHTML=lbl; })
+    .catch(()=>{ btn.disabled=false; btn.innerHTML=lbl; err.textContent=lg.of_fail; err.hidden=false; });
+});
 
 /* ---------- photos de chantier ---------- */
 const PHOTOS={chassis:1,iso:1,solar:2,clim:2,finit:1,reno:1,materiel:1};  // 2 = rendu 3D, pas une photo de chantier
@@ -1790,8 +1851,8 @@ T.fr.lg = {
      ["Numéro d’entreprise (BCE)","BE 1020.521.459"],
      ["Numéro de TVA","BE 1020.521.459"],
      ["Date de constitution","27 février 2025"],
-     ["Téléphone","[à compléter]"],
-     ["E-mail","[à compléter]"]],
+     ["Téléphone","+32 478 39 02 70"],
+     ["E-mail","info@smajestic.be"]],
  s2:"Les prix affichés sur ce site",
  p2:"Le calculateur donne une <b>estimation</b>, pas une offre. Il se base sur des dimensions standard et sur la maison que vous réglez vous-même à l’écran. Le prix définitif est confirmé par écrit après la visite et la prise de mesures, qui sont gratuites et sans engagement. Une estimation affichée ici ne constitue donc pas un engagement contractuel au sens de l’article VI.2 du Code de droit économique.",
  s3:"Ce qu’on fait de vos données",
@@ -1799,6 +1860,7 @@ T.fr.lg = {
  b3:["On ne vend ni ne loue vos données à personne.",
      "On ne les transmet qu’à l’installateur certifié concerné si votre demande porte sur des panneaux solaires ou une climatisation.",
      "On les conserve trois ans après le dernier contact, puis on les supprime.",
+     "Le formulaire du site est acheminé vers notre boîte mail par le service FormSubmit, qui transmet le message sans le conserver.",
      "Vous pouvez demander à les consulter, les corriger ou les effacer : écrivez-nous, on répond dans le mois."],
  s4:"Cookies",
  p4:"Ce site ne dépose <b>aucun cookie publicitaire ni de mesure d’audience</b>. Votre navigateur retient seulement la langue que vous choisissez (FR ou NL), et cette information ne quitte jamais votre appareil. C’est pour cette raison qu’aucune bannière cookies ne vous est demandée.",
@@ -1806,7 +1868,7 @@ T.fr.lg = {
  p5:"Les photos de chantier publiées sur ce site sont des réalisations de S. Majestic. Les vues en 3D, signalées par la mention « Vue 3D », sont des illustrations générées par le configurateur : ce ne sont pas des photos d’installations existantes. Les textes, photos et illustrations ne peuvent pas être réutilisés sans accord écrit.",
  s6:"Réclamation",
  p6:"Si quelque chose ne va pas, parlez-nous-en d’abord : c’est souvent plus rapide. Pour un litige de consommation, vous pouvez saisir le Service de médiation pour le consommateur (mediationconsommateur.be) ou la plateforme européenne de règlement en ligne. Pour une question de données personnelles, vous pouvez introduire une plainte auprès de l’Autorité de protection des données (autoriteprotectiondonnees.be).",
- note:"Dernière mise à jour : octobre 2026. Téléphone et e-mail restent à compléter avant la mise en ligne définitive."
+ note:"Dernière mise à jour : octobre 2026."
 };
 T.nl.lg = {
  h1:"Juridische informatie en <span class='ac'>privacy</span>",
@@ -1818,8 +1880,8 @@ T.nl.lg = {
      ["Ondernemingsnummer (KBO)","BE 1020.521.459"],
      ["Btw-nummer","BE 1020.521.459"],
      ["Oprichtingsdatum","27 februari 2025"],
-     ["Telefoon","[aan te vullen]"],
-     ["E-mail","[aan te vullen]"]],
+     ["Telefoon","+32 478 39 02 70"],
+     ["E-mail","info@smajestic.be"]],
  s2:"De prijzen op deze site",
  p2:"De rekenmodule geeft een <b>raming</b>, geen offerte. Ze vertrekt van standaardafmetingen en van de woning die u zelf op het scherm instelt. De definitieve prijs wordt schriftelijk bevestigd na het gratis en vrijblijvende bezoek en de opmeting. Een raming op deze site is dus geen contractuele verbintenis in de zin van artikel VI.2 van het Wetboek van economisch recht.",
  s3:"Wat we met uw gegevens doen",
@@ -1827,6 +1889,7 @@ T.nl.lg = {
  b3:["We verkopen of verhuren uw gegevens aan niemand.",
      "We geven ze enkel door aan de betrokken gecertificeerde installateur als uw aanvraag over zonnepanelen of airco gaat.",
      "We bewaren ze drie jaar na het laatste contact en wissen ze daarna.",
+     "Het formulier op de site wordt via de dienst FormSubmit naar onze mailbox doorgestuurd; die bewaart het bericht niet.",
      "U mag ze opvragen, laten verbeteren of laten wissen: schrijf ons, we antwoorden binnen de maand."],
  s4:"Cookies",
  p4:"Deze site plaatst <b>geen enkele reclame- of analysecookie</b>. Uw browser onthoudt enkel de taal die u kiest (FR of NL), en die informatie verlaat uw toestel nooit. Daarom krijgt u ook geen cookiebanner te zien.",
@@ -1834,7 +1897,7 @@ T.nl.lg = {
  p5:"De werffoto’s op deze site zijn realisaties van S. Majestic. De 3D-beelden, aangeduid met « 3D-zicht », zijn illustraties uit de configurator: het zijn geen foto’s van bestaande installaties. Teksten, foto’s en illustraties mogen niet worden hergebruikt zonder schriftelijke toestemming.",
  s6:"Klacht",
  p6:"Loopt er iets mis, spreek ons er eerst over aan: dat gaat meestal sneller. Voor een consumentengeschil kunt u terecht bij de Consumentenombudsdienst (consumentenombudsdienst.be) of bij het Europese platform voor onlinegeschillenbeslechting. Voor een vraag over persoonsgegevens kunt u klacht indienen bij de Gegevensbeschermingsautoriteit (gegevensbeschermingsautoriteit.be).",
- note:"Laatste update: oktober 2026. Telefoon en e-mail moeten nog ingevuld worden vóór de definitieve publicatie."
+ note:"Laatste update: oktober 2026."
 };
 
 applyLang();
